@@ -1,0 +1,72 @@
+[
+  {
+    "match_id": 6812497622,
+    "teama": [14, 49, 5, 42, 29],
+    "teamb": [26, 8, 35, 37, 44],
+    "teamawin": false,
+    "start_time": 1666165272
+  },
+  {
+    "match_id": 6812497489,
+    "teama": [37, 31, 47, 29, 49],
+    "teamb": [14, 5, 35, 6, 8],
+    "teamawin": false,
+    "start_time": 1666165262
+  },
+  {
+    "match_id": 6812497288,
+    "teama": [20, 31, 47, 42, 22],
+    "teamb": [8, 6, 35, 5, 64],
+    "teamawin": false,
+    "start_time": 1666165247
+  },
+  {
+    "match_id": 6812496641,
+    "teama": [42, 22, 64, 2, 20],
+    "teamb": [44, 37, 6, 30, 29],
+    "teamawin": false,
+    "start_time": 1666165202
+  },
+  {
+    "match_id": 6812496320,
+    "teama": [36, 64, 23, 21, 35],
+    "teamb": [81, 26, 5, 15, 4],
+    "teamawin": false,
+    "start_time": 1666165177
+  },
+  {
+    "match_id": 6812496285,
+    "teama": [22, 6, 30, 64, 42],
+    "teamb": [44, 35, 47, 31, 20],
+    "teamawin": true,
+    "start_time": 1666165177
+  },
+  {
+    "match_id": 6812495804,
+    "teama": [44, 14, 64, 49, 47],
+    "teamb": [22, 30, 5, 21, 29],
+    "teamawin": false,
+    "start_time": 1666165142
+  },
+  {
+    "match_id": 6812495606,
+    "teama": [8, 42, 64, 37, 22],
+    "teamb": [5, 2, 30, 6, 35],
+    "teamawin": false,
+    "start_time": 1666165127
+  },
+  {
+    "match_id": 6812495401,
+    "teama": [8, 20, 5, 22, 29],
+    "teamb": [2, 21, 49, 14, 30],
+    "teamawin": false,
+    "start_time": 1666165112
+  },
+  {
+    "match_id": 6812495280,
+    "teama": [22, 35, 29, 37, 26],
+    "teamb": [47, 6, 31, 14, 2],
+    "teamawin": false,
+    "start_time": 1666165102
+  }
+]

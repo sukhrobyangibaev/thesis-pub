@@ -1,0 +1,1283 @@
+[
+  {
+    "hero_id": 40,
+    "item": "spirit_vessel",
+    "time": 450,
+    "games": "3",
+    "wins": "2"
+  },
+  {
+    "hero_id": 51,
+    "item": "spirit_vessel",
+    "time": 450,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 74,
+    "item": "spirit_vessel",
+    "time": 450,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 88,
+    "item": "spirit_vessel",
+    "time": 450,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 107,
+    "item": "spirit_vessel",
+    "time": 450,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 110,
+    "item": "spirit_vessel",
+    "time": 450,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 30,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 33,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "7",
+    "wins": "6"
+  },
+  {
+    "hero_id": 36,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "4",
+    "wins": "2"
+  },
+  {
+    "hero_id": 40,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "8",
+    "wins": "6"
+  },
+  {
+    "hero_id": 43,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "3",
+    "wins": "1"
+  },
+  {
+    "hero_id": 51,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "hero_id": 63,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "3",
+    "wins": "2"
+  },
+  {
+    "hero_id": 69,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "2",
+    "wins": "2"
+  },
+  {
+    "hero_id": 71,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 74,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "5",
+    "wins": "4"
+  },
+  {
+    "hero_id": 78,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 90,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "3",
+    "wins": "2"
+  },
+  {
+    "hero_id": 100,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 107,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "2",
+    "wins": "2"
+  },
+  {
+    "hero_id": 110,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "3",
+    "wins": "2"
+  },
+  {
+    "hero_id": 112,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 120,
+    "item": "spirit_vessel",
+    "time": 600,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 9,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "5",
+    "wins": "2"
+  },
+  {
+    "hero_id": 13,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 23,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 30,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 33,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "16",
+    "wins": "10"
+  },
+  {
+    "hero_id": 36,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "3",
+    "wins": "2"
+  },
+  {
+    "hero_id": 39,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 40,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "14",
+    "wins": "8"
+  },
+  {
+    "hero_id": 43,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "9",
+    "wins": "8"
+  },
+  {
+    "hero_id": 50,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 51,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 53,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 63,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "4",
+    "wins": "1"
+  },
+  {
+    "hero_id": 69,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "3",
+    "wins": "1"
+  },
+  {
+    "hero_id": 71,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 74,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "23",
+    "wins": "16"
+  },
+  {
+    "hero_id": 83,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 90,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "2",
+    "wins": "0"
+  },
+  {
+    "hero_id": 98,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 107,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "2",
+    "wins": "2"
+  },
+  {
+    "hero_id": 110,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "3",
+    "wins": "1"
+  },
+  {
+    "hero_id": 120,
+    "item": "spirit_vessel",
+    "time": 720,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 7,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 9,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "6",
+    "wins": "6"
+  },
+  {
+    "hero_id": 13,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 23,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 30,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "3",
+    "wins": "1"
+  },
+  {
+    "hero_id": 33,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "12",
+    "wins": "8"
+  },
+  {
+    "hero_id": 36,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "hero_id": 40,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "19",
+    "wins": "10"
+  },
+  {
+    "hero_id": 43,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "20",
+    "wins": "9"
+  },
+  {
+    "hero_id": 47,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "hero_id": 51,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 55,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 60,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "2",
+    "wins": "0"
+  },
+  {
+    "hero_id": 62,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "2",
+    "wins": "0"
+  },
+  {
+    "hero_id": 63,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "5",
+    "wins": "2"
+  },
+  {
+    "hero_id": 69,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "hero_id": 71,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 74,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "26",
+    "wins": "14"
+  },
+  {
+    "hero_id": 78,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "4",
+    "wins": "3"
+  },
+  {
+    "hero_id": 85,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 90,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "5",
+    "wins": "1"
+  },
+  {
+    "hero_id": 100,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 106,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "hero_id": 107,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "9",
+    "wins": "5"
+  },
+  {
+    "hero_id": 110,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "10",
+    "wins": "4"
+  },
+  {
+    "hero_id": 112,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 119,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 120,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 123,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 126,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "3",
+    "wins": "1"
+  },
+  {
+    "hero_id": 129,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 137,
+    "item": "spirit_vessel",
+    "time": 900,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 2,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "2",
+    "wins": "2"
+  },
+  {
+    "hero_id": 9,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "31",
+    "wins": "15"
+  },
+  {
+    "hero_id": 13,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "4",
+    "wins": "3"
+  },
+  {
+    "hero_id": 14,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "3",
+    "wins": "2"
+  },
+  {
+    "hero_id": 21,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 23,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 25,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 30,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "5",
+    "wins": "2"
+  },
+  {
+    "hero_id": 31,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 33,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "5",
+    "wins": "3"
+  },
+  {
+    "hero_id": 36,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "5",
+    "wins": "3"
+  },
+  {
+    "hero_id": 39,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 40,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "23",
+    "wins": "13"
+  },
+  {
+    "hero_id": 43,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "6",
+    "wins": "2"
+  },
+  {
+    "hero_id": 47,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "hero_id": 48,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 50,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 51,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "16",
+    "wins": "12"
+  },
+  {
+    "hero_id": 62,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "3",
+    "wins": "0"
+  },
+  {
+    "hero_id": 63,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "2",
+    "wins": "0"
+  },
+  {
+    "hero_id": 64,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 69,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "3",
+    "wins": "2"
+  },
+  {
+    "hero_id": 71,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 72,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 74,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "15",
+    "wins": "8"
+  },
+  {
+    "hero_id": 75,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "hero_id": 78,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "3",
+    "wins": "2"
+  },
+  {
+    "hero_id": 79,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 85,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 90,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "4",
+    "wins": "2"
+  },
+  {
+    "hero_id": 100,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 106,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "8",
+    "wins": "5"
+  },
+  {
+    "hero_id": 107,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "27",
+    "wins": "21"
+  },
+  {
+    "hero_id": 110,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "7",
+    "wins": "3"
+  },
+  {
+    "hero_id": 119,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "3",
+    "wins": "1"
+  },
+  {
+    "hero_id": 120,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "hero_id": 123,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "6",
+    "wins": "4"
+  },
+  {
+    "hero_id": 126,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 128,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "3",
+    "wins": "2"
+  },
+  {
+    "hero_id": 135,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 136,
+    "item": "spirit_vessel",
+    "time": 1200,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 2,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 5,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "2",
+    "wins": "0"
+  },
+  {
+    "hero_id": 9,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "8",
+    "wins": "4"
+  },
+  {
+    "hero_id": 14,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "4",
+    "wins": "1"
+  },
+  {
+    "hero_id": 21,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 30,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "3",
+    "wins": "1"
+  },
+  {
+    "hero_id": 33,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 39,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 40,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "15",
+    "wins": "8"
+  },
+  {
+    "hero_id": 43,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 47,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 51,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "13",
+    "wins": "3"
+  },
+  {
+    "hero_id": 55,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 60,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 62,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 64,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 68,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "hero_id": 69,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 71,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "2",
+    "wins": "0"
+  },
+  {
+    "hero_id": 74,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "3",
+    "wins": "2"
+  },
+  {
+    "hero_id": 75,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 83,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 84,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 85,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "2",
+    "wins": "2"
+  },
+  {
+    "hero_id": 87,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 88,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 90,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "2",
+    "wins": "0"
+  },
+  {
+    "hero_id": 100,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "4",
+    "wins": "1"
+  },
+  {
+    "hero_id": 101,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 107,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "24",
+    "wins": "12"
+  },
+  {
+    "hero_id": 110,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "3",
+    "wins": "2"
+  },
+  {
+    "hero_id": 111,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 119,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "6",
+    "wins": "6"
+  },
+  {
+    "hero_id": 121,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 123,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "2",
+    "wins": "2"
+  },
+  {
+    "hero_id": 128,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 135,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "hero_id": 136,
+    "item": "spirit_vessel",
+    "time": 1500,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 2,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 9,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "7",
+    "wins": "4"
+  },
+  {
+    "hero_id": 14,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "2",
+    "wins": "0"
+  },
+  {
+    "hero_id": 15,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 16,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 26,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 27,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 30,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "3",
+    "wins": "2"
+  },
+  {
+    "hero_id": 37,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 40,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "4",
+    "wins": "2"
+  },
+  {
+    "hero_id": 43,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "hero_id": 50,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "2",
+    "wins": "2"
+  },
+  {
+    "hero_id": 51,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "5",
+    "wins": "1"
+  },
+  {
+    "hero_id": 62,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "hero_id": 68,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 71,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "hero_id": 74,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "2",
+    "wins": "0"
+  },
+  {
+    "hero_id": 78,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 83,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 84,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 85,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 100,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 101,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 102,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "hero_id": 107,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "6",
+    "wins": "1"
+  },
+  {
+    "hero_id": 108,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "hero_id": 110,
+    "item": "spirit_vessel",
+    "time": 1800,
+    "games": "1",
+    "wins": "1"
+  }
+]

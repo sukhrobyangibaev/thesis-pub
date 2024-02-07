@@ -1,0 +1,15 @@
+SELECT
+        
+picks_bans,
+matches.match_id,
+radiant_win,
+leagues.name leaguename
+FROM matches
+JOIN match_patch using(match_id)
+JOIN leagues using(leagueid)
+WHERE TRUE
+AND match_patch.patch >= '7.32'
+AND match_patch.patch <= '7.32'
+AND matches.start_time >= extract(epoch from timestamp '2022-09-30T19:00:00.000Z')
+AND matches.start_time <= extract(epoch from timestamp '2022-10-19T19:00:00.000Z')
+LIMIT 100

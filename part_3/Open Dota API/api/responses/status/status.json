@@ -1,0 +1,322 @@
+{
+  "user_players": 367901,
+  "tracked_players": 30,
+  "matches_last_day": 815758,
+  "matches_last_hour": 21144,
+  "retriever_matches_last_day": 844361,
+  "retriever_players_last_day": 1686875,
+  "backup_retriever_last_day": 0,
+  "parsed_matches_last_day": 21307,
+  "requests_last_day": 22621,
+  "cassandra_repair_last_day": 3350,
+  "build_match_last_day": 663285,
+  "error_last_day": 164,
+  "fullhistory_last_day": 88925,
+  "skip_seq_num_last_day": 2846,
+  "webhooks_last_day": 98,
+  "feed_last_day": 0,
+  "api_hits_last_day": 4212044,
+  "api_hits_ui_last_day": 339287,
+  "fhQueue": 0,
+  "gcQueue": 0,
+  "mmrQueue": 0,
+  "countsQueue": 0,
+  "scenariosQueue": 0,
+  "benchmarksQueue": 0,
+  "retriever": [
+    {
+      "hostname": "retriever6",
+      "count": "681"
+    },
+    {
+      "hostname": "retriever1",
+      "count": "682"
+    },
+    {
+      "hostname": "retriever3",
+      "count": "685"
+    },
+    {
+      "hostname": "retriever4",
+      "count": "693"
+    },
+    {
+      "hostname": "retriever2",
+      "count": "704"
+    },
+    {
+      "hostname": "retriever5",
+      "count": "708"
+    },
+    {
+      "hostname": "retriever-lb-use2-384959428",
+      "count": "18162"
+    }
+  ],
+  "api_paths": [
+    {
+      "hostname": "distributions",
+      "count": "1"
+    },
+    {
+      "hostname": "benchmarks",
+      "count": "4"
+    },
+    {
+      "hostname": "www",
+      "count": "4"
+    },
+    {
+      "hostname": "schema",
+      "count": "10"
+    },
+    {
+      "hostname": "scenarios",
+      "count": "12"
+    },
+    {
+      "hostname": "records",
+      "count": "15"
+    },
+    {
+      "hostname": "constants",
+      "count": "19"
+    },
+    {
+      "hostname": "findMatches",
+      "count": "19"
+    },
+    {
+      "hostname": "herostats",
+      "count": "19"
+    },
+    {
+      "hostname": "rankings",
+      "count": "28"
+    },
+    {
+      "hostname": "health",
+      "count": "36"
+    },
+    {
+      "hostname": "explorer",
+      "count": "122"
+    },
+    {
+      "hostname": "live",
+      "count": "149"
+    },
+    {
+      "hostname": "heroStats",
+      "count": "155"
+    },
+    {
+      "hostname": "promatches",
+      "count": "174"
+    },
+    {
+      "hostname": "publicMatches",
+      "count": "180"
+    },
+    {
+      "hostname": "search",
+      "count": "191"
+    },
+    {
+      "hostname": "heroes",
+      "count": "220"
+    },
+    {
+      "hostname": "replays",
+      "count": "291"
+    },
+    {
+      "hostname": "proMatches",
+      "count": "413"
+    },
+    {
+      "hostname": "leagues",
+      "count": "440"
+    },
+    {
+      "hostname": "proPlayers",
+      "count": "572"
+    },
+    {
+      "hostname": "teams",
+      "count": "1015"
+    },
+    {
+      "hostname": "request",
+      "count": "1178"
+    },
+    {
+      "hostname": "",
+      "count": "1675"
+    },
+    {
+      "hostname": "metadata",
+      "count": "1714"
+    },
+    {
+      "hostname": "api",
+      "count": "12490"
+    },
+    {
+      "hostname": "matches",
+      "count": "19074"
+    },
+    {
+      "hostname": "players",
+      "count": "71814"
+    }
+  ],
+  "last_added": [
+    {
+      "match_id": 2655778928,
+      "duration": 2504,
+      "start_time": 1474301593
+    },
+    {
+      "match_id": 2655822724,
+      "duration": 1647,
+      "start_time": 1474303044
+    },
+    {
+      "match_id": 2655924933,
+      "duration": 2043,
+      "start_time": 1474306647
+    },
+    {
+      "match_id": 6812478453,
+      "duration": 2174,
+      "start_time": 1666163823
+    },
+    {
+      "match_id": 6812494089,
+      "duration": 1117,
+      "start_time": 1666165006
+    },
+    {
+      "match_id": 6812481954,
+      "duration": 2039,
+      "start_time": 1666164104
+    },
+    {
+      "match_id": 6812490917,
+      "duration": 1278,
+      "start_time": 1666164777
+    },
+    {
+      "match_id": 6812471216,
+      "duration": 2758,
+      "start_time": 1666163281
+    },
+    {
+      "match_id": 6812473164,
+      "duration": 2603,
+      "start_time": 1666163433
+    },
+    {
+      "match_id": 6812470057,
+      "duration": 2825,
+      "start_time": 1666163176
+    }
+  ],
+  "last_parsed": [
+    {
+      "match_id": 6812439945,
+      "duration": 1953,
+      "start_time": 1666160751
+    },
+    {
+      "match_id": 6812424533,
+      "duration": 4837,
+      "start_time": 1666159437
+    },
+    {
+      "match_id": 6812485069,
+      "duration": 1476,
+      "start_time": 1666164339
+    },
+    {
+      "match_id": 6812458155,
+      "duration": 3260,
+      "start_time": 1666162234
+    },
+    {
+      "match_id": 6806112746,
+      "duration": 1245,
+      "start_time": 1665806999
+    },
+    {
+      "match_id": 6812463920,
+      "duration": 2843,
+      "start_time": 1666162700
+    },
+    {
+      "match_id": 6811947438,
+      "duration": 2437,
+      "start_time": 1666119301
+    },
+    {
+      "match_id": 6812392560,
+      "duration": 3948,
+      "start_time": 1666156624
+    },
+    {
+      "match_id": 6811295199,
+      "duration": 1898,
+      "start_time": 1666094595
+    },
+    {
+      "match_id": 6812424896,
+      "duration": 2204,
+      "start_time": 1666159452
+    }
+  ],
+  "load_times": {
+    "50": 36,
+    "75": 245,
+    "90": 805,
+    "95": 1361,
+    "99": 2939
+  },
+  "health": {
+    "steamApi": {
+      "metric": 0,
+      "threshold": 1,
+      "timestamp": 1666166306
+    },
+    "cassandraUsage": {
+      "metric": 1064540292613.2003,
+      "threshold": 1800000000000,
+      "timestamp": 1666166309
+    },
+    "gcDelay": {
+      "metric": 0,
+      "threshold": 300000,
+      "timestamp": 1666166312
+    },
+    "seqNumDelay": {
+      "metric": -221,
+      "threshold": 10000,
+      "timestamp": 1666166307
+    },
+    "postgresUsage": {
+      "metric": 275088720044,
+      "threshold": 400000000000,
+      "timestamp": 1666166309
+    },
+    "redisUsage": {
+      "metric": 316416392,
+      "threshold": 4000000000,
+      "timestamp": 1666166304
+    },
+    "parseDelay": {
+      "metric": 0,
+      "threshold": 3000,
+      "timestamp": 1666166306
+    }
+  }
+}

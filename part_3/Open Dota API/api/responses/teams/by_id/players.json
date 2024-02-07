@@ -1,0 +1,338 @@
+[
+  {
+    "account_id": 72312627,
+    "name": "MATUMBAMAN",
+    "games_played": 1001,
+    "wins": 642,
+    "is_current_team_member": true
+  },
+  {
+    "account_id": 82262664,
+    "name": "KuroKy",
+    "games_played": 888,
+    "wins": 575,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 34505203,
+    "name": "MinD_ContRoL",
+    "games_played": 887,
+    "wins": 574,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 86738694,
+    "name": "Qojqva",
+    "games_played": 691,
+    "wins": 368,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 54580962,
+    "name": "iNsania",
+    "games_played": 618,
+    "wins": 333,
+    "is_current_team_member": true
+  },
+  {
+    "account_id": 152962063,
+    "name": "m1CKe",
+    "games_played": 615,
+    "wins": 333,
+    "is_current_team_member": true
+  },
+  {
+    "account_id": 105248644,
+    "name": "Miracle-",
+    "games_played": 600,
+    "wins": 391,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 77490514,
+    "name": "Boxi",
+    "games_played": 591,
+    "wins": 319,
+    "is_current_team_member": true
+  },
+  {
+    "account_id": 101356886,
+    "name": "Gh",
+    "games_played": 577,
+    "wins": 382,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 30237211,
+    "name": "BuLba",
+    "games_played": 545,
+    "wins": 312,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 67601693,
+    "name": null,
+    "games_played": 493,
+    "wins": 287,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 401792574,
+    "name": "Taiga",
+    "games_played": 438,
+    "wins": 229,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 41470731,
+    "name": "FLUFFNSTUFF",
+    "games_played": 372,
+    "wins": 221,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 26771994,
+    "name": "JerAx",
+    "games_played": 268,
+    "wins": 174,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 86799300,
+    "name": "Fata",
+    "games_played": 265,
+    "wins": 173,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 38515149,
+    "name": null,
+    "games_played": 263,
+    "wins": 146,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 86715129,
+    "name": "ixmike88",
+    "games_played": 236,
+    "wins": 145,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 1185644,
+    "name": null,
+    "games_played": 232,
+    "wins": 144,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 73562326,
+    "name": "zai",
+    "games_played": 181,
+    "wins": 104,
+    "is_current_team_member": true
+  },
+  {
+    "account_id": 85805514,
+    "name": "DeMoN",
+    "games_played": 121,
+    "wins": 62,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 86700461,
+    "name": "w33",
+    "games_played": 53,
+    "wins": 31,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 111620041,
+    "name": "SumaiL-",
+    "games_played": 28,
+    "wins": 14,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 86726887,
+    "name": "MSS",
+    "games_played": 20,
+    "wins": 14,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 105599955,
+    "name": "Heen",
+    "games_played": 13,
+    "wins": 5,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 129585121,
+    "name": "Aventador",
+    "games_played": 11,
+    "wins": 6,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 311360822,
+    "name": "ana",
+    "games_played": 8,
+    "wins": 2,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 87197791,
+    "name": "rmN-",
+    "games_played": 7,
+    "wins": 4,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 10366616,
+    "name": "Sneyking",
+    "games_played": 7,
+    "wins": 5,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 106497354,
+    "name": null,
+    "games_played": 6,
+    "wins": 3,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 113439358,
+    "name": null,
+    "games_played": 4,
+    "wins": 2,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 86727555,
+    "name": "PPD",
+    "games_played": 3,
+    "wins": 1,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 90586993,
+    "name": null,
+    "games_played": 2,
+    "wins": 2,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 98172857,
+    "name": "MiLAN",
+    "games_played": 2,
+    "wins": 0,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 90793520,
+    "name": null,
+    "games_played": 2,
+    "wins": 2,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 43908335,
+    "name": null,
+    "games_played": 2,
+    "wins": 1,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 86828698,
+    "name": null,
+    "games_played": 2,
+    "wins": 2,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 26316691,
+    "name": "IllidanSTR",
+    "games_played": 2,
+    "wins": 0,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 129610677,
+    "name": null,
+    "games_played": 1,
+    "wins": 1,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 3246092,
+    "name": null,
+    "games_played": 1,
+    "wins": 1,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 151069590,
+    "name": "Peksu",
+    "games_played": 1,
+    "wins": 0,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 19757254,
+    "name": null,
+    "games_played": 1,
+    "wins": 1,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 195587572,
+    "name": null,
+    "games_played": 1,
+    "wins": 0,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 87285329,
+    "name": "busen",
+    "games_played": 1,
+    "wins": 1,
+    "is_current_team_member": false
+  },
+  {
+    "account_id": 181562593,
+    "name": null,
+    "games_played": 1,
+    "wins": 1,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 16280166,
+    "name": null,
+    "games_played": 1,
+    "wins": 0,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 110880087,
+    "name": null,
+    "games_played": 1,
+    "wins": 1,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 37105332,
+    "name": null,
+    "games_played": 1,
+    "wins": 1,
+    "is_current_team_member": null
+  },
+  {
+    "account_id": 102119379,
+    "name": "One Autumn Leaf",
+    "games_played": 1,
+    "wins": 0,
+    "is_current_team_member": false
+  }
+]

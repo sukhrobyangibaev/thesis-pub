@@ -1,0 +1,122 @@
+{
+  "hero_id": null,
+  "rankings": [
+    {
+      "account_id": 140796912,
+      "score": 4083.36624691834,
+      "personaname": "dIngDong",
+      "name": null,
+      "avatar": "https://avatars.akamai.steamstatic.com/a8091fa7e1c73cf1289ef49f74e105e0c0f5562f.jpg",
+      "last_login": "2021-02-05T23:02:54.244Z",
+      "rank_tier": 45
+    },
+    {
+      "account_id": 359481053,
+      "score": 4083.36624691834,
+      "personaname": "EjectReject-Tv",
+      "name": null,
+      "avatar": "https://avatars.akamai.steamstatic.com/b30634a505c7d202bbf7031f1868b4ca6e9bb9d9.jpg",
+      "last_login": "2019-10-12T23:50:14.294Z",
+      "rank_tier": 45
+    },
+    {
+      "account_id": 209467221,
+      "score": 4083.36624691834,
+      "personaname": "Tag You're It",
+      "name": null,
+      "avatar": "https://avatars.akamai.steamstatic.com/b0ae5678e67581947defc0c2d8201804112349c5.jpg",
+      "last_login": null,
+      "rank_tier": 32
+    },
+    {
+      "account_id": 173911834,
+      "score": 4083.36624691834,
+      "personaname": "Fathomorg",
+      "name": null,
+      "avatar": "https://avatars.akamai.steamstatic.com/7af1bbba5ab753ee59f371f6b129a20dca3f3750.jpg",
+      "last_login": "2022-04-08T05:13:58.059Z",
+      "rank_tier": 72
+    },
+    {
+      "account_id": 17965832,
+      "score": 4083.36624691834,
+      "personaname": "live mas",
+      "name": null,
+      "avatar": "https://avatars.akamai.steamstatic.com/81a38c59c22019f0391c01c765dfe2fe3070d076.jpg",
+      "last_login": "2018-07-09T23:06:39.636Z",
+      "rank_tier": null
+    },
+    {
+      "account_id": 366248088,
+      "score": 3992.64124438824,
+      "personaname": "Nissan",
+      "name": null,
+      "avatar": "https://avatars.akamai.steamstatic.com/627bc1427666dec62a18b9f7b22c52a411e77869.jpg",
+      "last_login": null,
+      "rank_tier": null
+    },
+    {
+      "account_id": 88045515,
+      "score": 3992.64124438824,
+      "personaname": "< Event >",
+      "name": null,
+      "avatar": "https://avatars.akamai.steamstatic.com/921fb03e370fa56e46b0a0b9622ad0d23c9d4c08.jpg",
+      "last_login": null,
+      "rank_tier": null
+    },
+    {
+      "account_id": 360923217,
+      "score": 3992.64124438824,
+      "personaname": "Pinuno",
+      "name": null,
+      "avatar": "https://avatars.akamai.steamstatic.com/be220c47c16df837a51a6843e3a648ff1fb36cee.jpg",
+      "last_login": null,
+      "rank_tier": 64
+    },
+    {
+      "account_id": 482387561,
+      "score": 3988.81842302219,
+      "personaname": "UP then win",
+      "name": null,
+      "avatar": "https://avatars.akamai.steamstatic.com/0df1ad30789de494c8f9fc741d78f8a81007d5fe.jpg",
+      "last_login": null,
+      "rank_tier": null
+    },
+    {
+      "account_id": 120078557,
+      "score": 3983.36624691834,
+      "personaname": "losing gold meta",
+      "name": null,
+      "avatar": "https://avatars.akamai.steamstatic.com/d1cc2853c4222002638ea9fdc841f41fc20dae89.jpg",
+      "last_login": "2022-02-09T18:17:40.264Z",
+      "rank_tier": 55
+    },
+    {
+      "account_id": 99891732,
+      "score": 3983.36624691834,
+      "personaname": "Lyzer",
+      "name": null,
+      "avatar": "https://avatars.akamai.steamstatic.com/38130bc3269991aca8c28b88897fc38a5f1ecbce.jpg",
+      "last_login": null,
+      "rank_tier": 53
+    },
+    {
+      "account_id": 156168436,
+      "score": 3983.36624691834,
+      "personaname": "Snoodle",
+      "name": null,
+      "avatar": "https://avatars.akamai.steamstatic.com/832368aa58b9fb164a7ebecacb8f141e075ee38c.jpg",
+      "last_login": "2021-03-13T12:19:20.074Z",
+      "rank_tier": 63
+    },
+    {
+      "account_id": 75091697,
+      "score": 3983.36624691834,
+      "personaname": "cool guy that everyone likes",
+      "name": null,
+      "avatar": "https://avatars.akamai.steamstatic.com/30d4166c5a7030b14ad1fc9bbd5ce04c4b914def.jpg",
+      "last_login": "2018-03-01T07:48:24.654Z",
+      "rank_tier": 33
+    }
+  ]
+}

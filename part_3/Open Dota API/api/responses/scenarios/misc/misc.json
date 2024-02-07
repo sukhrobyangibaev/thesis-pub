@@ -1,0 +1,527 @@
+[
+  {
+    "scenario": "courier_kill",
+    "is_radiant": true,
+    "region": 9,
+    "games": "3",
+    "wins": "1"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": false,
+    "region": 38,
+    "games": "2",
+    "wins": "0"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": false,
+    "region": 15,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": false,
+    "region": 10,
+    "games": "11",
+    "wins": "4"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": false,
+    "region": 11,
+    "games": "3",
+    "wins": "3"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": true,
+    "region": 38,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": false,
+    "region": 5,
+    "games": "161",
+    "wins": "83"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": false,
+    "region": 2,
+    "games": "58",
+    "wins": "36"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": true,
+    "region": 17,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": false,
+    "region": 7,
+    "games": "3",
+    "wins": "1"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": true,
+    "region": 7,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": true,
+    "region": 5,
+    "games": "59",
+    "wins": "31"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": false,
+    "region": 1,
+    "games": "5",
+    "wins": "2"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": true,
+    "region": 3,
+    "games": "92",
+    "wins": "49"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": false,
+    "region": 8,
+    "games": "64",
+    "wins": "36"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": true,
+    "region": 8,
+    "games": "32",
+    "wins": "16"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": false,
+    "region": 3,
+    "games": "202",
+    "wins": "97"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": true,
+    "region": 10,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": true,
+    "region": 1,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": true,
+    "region": 11,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": true,
+    "region": 2,
+    "games": "37",
+    "wins": "19"
+  },
+  {
+    "scenario": "courier_kill",
+    "is_radiant": false,
+    "region": 17,
+    "games": "9",
+    "wins": "4"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": true,
+    "region": 15,
+    "games": "4",
+    "wins": "1"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": false,
+    "region": 8,
+    "games": "127",
+    "wins": "75"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": false,
+    "region": 11,
+    "games": "2",
+    "wins": "2"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": true,
+    "region": 9,
+    "games": "19",
+    "wins": "13"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": true,
+    "region": 1,
+    "games": "60",
+    "wins": "32"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": true,
+    "region": 10,
+    "games": "37",
+    "wins": "22"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": true,
+    "region": 8,
+    "games": "132",
+    "wins": "75"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": false,
+    "region": 3,
+    "games": "519",
+    "wins": "284"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": true,
+    "region": 11,
+    "games": "3",
+    "wins": "1"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": false,
+    "region": 9,
+    "games": "11",
+    "wins": "7"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": false,
+    "region": 17,
+    "games": "20",
+    "wins": "11"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": true,
+    "region": 2,
+    "games": "197",
+    "wins": "108"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": false,
+    "region": 15,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": false,
+    "region": 38,
+    "games": "2",
+    "wins": "0"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": true,
+    "region": 7,
+    "games": "9",
+    "wins": "5"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": true,
+    "region": 5,
+    "games": "314",
+    "wins": "177"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": true,
+    "region": 17,
+    "games": "23",
+    "wins": "15"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": false,
+    "region": 2,
+    "games": "214",
+    "wins": "131"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": true,
+    "region": 38,
+    "games": "8",
+    "wins": "4"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": false,
+    "region": 5,
+    "games": "314",
+    "wins": "173"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": false,
+    "region": 7,
+    "games": "7",
+    "wins": "2"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": true,
+    "region": 3,
+    "games": "455",
+    "wins": "243"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": false,
+    "region": 1,
+    "games": "44",
+    "wins": "21"
+  },
+  {
+    "scenario": "first_blood",
+    "is_radiant": false,
+    "region": 10,
+    "games": "26",
+    "wins": "10"
+  },
+  {
+    "scenario": "neg_chat_1min",
+    "is_radiant": true,
+    "region": 2,
+    "games": "3",
+    "wins": "1"
+  },
+  {
+    "scenario": "neg_chat_1min",
+    "is_radiant": false,
+    "region": 5,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "scenario": "neg_chat_1min",
+    "is_radiant": true,
+    "region": 1,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "scenario": "neg_chat_1min",
+    "is_radiant": false,
+    "region": 10,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "scenario": "neg_chat_1min",
+    "is_radiant": true,
+    "region": 3,
+    "games": "3",
+    "wins": "1"
+  },
+  {
+    "scenario": "neg_chat_1min",
+    "is_radiant": true,
+    "region": 8,
+    "games": "2",
+    "wins": "1"
+  },
+  {
+    "scenario": "neg_chat_1min",
+    "is_radiant": false,
+    "region": 2,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "scenario": "neg_chat_1min",
+    "is_radiant": true,
+    "region": 5,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "scenario": "neg_chat_1min",
+    "is_radiant": false,
+    "region": 3,
+    "games": "5",
+    "wins": "3"
+  },
+  {
+    "scenario": "neg_chat_1min",
+    "is_radiant": true,
+    "region": 10,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": false,
+    "region": 3,
+    "games": "85",
+    "wins": "44"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": false,
+    "region": 17,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": true,
+    "region": 17,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": false,
+    "region": 2,
+    "games": "54",
+    "wins": "31"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": true,
+    "region": 10,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": false,
+    "region": 11,
+    "games": "3",
+    "wins": "3"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": true,
+    "region": 1,
+    "games": "5",
+    "wins": "5"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": true,
+    "region": 38,
+    "games": "4",
+    "wins": "2"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": true,
+    "region": 11,
+    "games": "3",
+    "wins": "0"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": true,
+    "region": 2,
+    "games": "55",
+    "wins": "26"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": false,
+    "region": 38,
+    "games": "4",
+    "wins": "2"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": true,
+    "region": 3,
+    "games": "92",
+    "wins": "41"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": false,
+    "region": 1,
+    "games": "6",
+    "wins": "3"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": true,
+    "region": 5,
+    "games": "202",
+    "wins": "97"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": false,
+    "region": 10,
+    "games": "1",
+    "wins": "0"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": false,
+    "region": 5,
+    "games": "206",
+    "wins": "100"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": true,
+    "region": 9,
+    "games": "1",
+    "wins": "1"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": false,
+    "region": 8,
+    "games": "30",
+    "wins": "15"
+  },
+  {
+    "scenario": "pos_chat_1min",
+    "is_radiant": true,
+    "region": 8,
+    "games": "31",
+    "wins": "12"
+  }
+]

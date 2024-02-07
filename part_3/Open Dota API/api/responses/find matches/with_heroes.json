@@ -1,0 +1,23 @@
+[
+  {
+    "match_id": 6812497288,
+    "teama": [20, 31, 47, 42, 22],
+    "teamb": [8, 6, 35, 5, 64],
+    "teamawin": false,
+    "start_time": 1666165247
+  },
+  {
+    "match_id": 6810851643,
+    "teama": [5, 64, 8, 6, 35],
+    "teamb": [31, 20, 22, 47, 42],
+    "teamawin": true,
+    "start_time": 1666061177
+  },
+  {
+    "match_id": 6709862074,
+    "teama": [5, 8, 35, 6, 64],
+    "teamb": [47, 42, 22, 20, 31],
+    "teamawin": false,
+    "start_time": 1660651928
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "steamApi": {
+    "metric": 0,
+    "threshold": 1,
+    "timestamp": 1666166265
+  },
+  "cassandraUsage": {
+    "metric": 1248499575850,
+    "threshold": 1800000000000,
+    "timestamp": 1666166259
+  },
+  "gcDelay": {
+    "metric": 0,
+    "threshold": 300000,
+    "timestamp": 1666166262
+  },
+  "seqNumDelay": {
+    "metric": -15,
+    "threshold": 10000,
+    "timestamp": 1666166262
+  },
+  "postgresUsage": {
+    "metric": 275088703660,
+    "threshold": 400000000000,
+    "timestamp": 1666166259
+  },
+  "redisUsage": {
+    "metric": 319668976,
+    "threshold": 4000000000,
+    "timestamp": 1666166264
+  },
+  "parseDelay": {
+    "metric": 0,
+    "threshold": 3000,
+    "timestamp": 1666166266
+  }
+}
