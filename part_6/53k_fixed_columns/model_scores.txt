@@ -2,3 +2,5 @@ Extra Trees Classifier 0.9586232838066578
 Random Forest 0.9443295091216851
 
 average etc and rf = 0.95147639646417145
+
+ann 0.8864021064510063
