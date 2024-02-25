@@ -1,5 +1,8 @@
 __pycache__/
 thesis_venv
 *.pkl
+part_5/**/*.csv
+part_6/**/*.csv
+part_7/*.csv
 .DS_Store
 .env
