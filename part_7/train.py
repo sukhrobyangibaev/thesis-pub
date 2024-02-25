@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score
 import pickle
 
 
-df = pd.read_csv('part_7/30min_36107x186_samples.csv')
+df = pd.read_csv('part_7/30min_42182x186_samples.csv')
 
 X = df.iloc[:, 0:-1].values
 y = df.iloc[:, -1].values
