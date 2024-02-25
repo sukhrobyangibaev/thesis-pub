@@ -7,8 +7,8 @@ LGC_COL = SDA_DB["league_games_col"]
 
 matches_for_pd = []
 
-matches = LGC_COL.find({"winner": {"$exists": True}, 'scoreboard.duration': {"$gt": 1200, "$lte": 1800}})
-# matches = LGC_COL.find({"winner": {"$exists": True}, 'scoreboard.duration': {"$gt": 1200}})
+# matches = LGC_COL.find({"winner": {"$exists": True}, 'scoreboard.duration': {"$gt": 600, "$lte": 1200}})
+matches = LGC_COL.find({"winner": {"$exists": True}, 'scoreboard.duration': {"$gt": 1200}})
 
 for entry in matches:
     try:
@@ -25,17 +25,17 @@ for entry in matches:
         # tmp['score'] = entry["scoreboard"]['radiant']["score"] - entry["scoreboard"]['dire']["score"]
 
         rts = entry["scoreboard"]['radiant']["tower_state"]
-        for i, t in enumerate(format(rts, 'b')):
+        for i, t in enumerate(format(rts, 'b').zfill(11)):
             tmp[f'{i}_rts'] = t
         dts = entry["scoreboard"]['dire']["tower_state"]
-        for i, t in enumerate(format(dts, 'b')):
+        for i, t in enumerate(format(dts, 'b').zfill(11)):
             tmp[f'{i}_dts'] = t
 
         rbs = entry["scoreboard"]['radiant']["barracks_state"]
-        for i, t in enumerate(format(rbs, 'b')):
+        for i, t in enumerate(format(rbs, 'b').zfill(6)):
             tmp[f'{i}_rbs'] = t
         dbs = entry["scoreboard"]['dire']["barracks_state"]
-        for i, t in enumerate(format(dbs, 'b')):
+        for i, t in enumerate(format(dbs, 'b').zfill(6)):
             tmp[f'{i}_dbs'] = t
 
         # radiant_net_worth = 0
