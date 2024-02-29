@@ -74,9 +74,9 @@ try:
             time.sleep(5)
             continue
 
-    # for err_match_id in error_ids:
-    #     delete_result = MLRS_COL.delete_many({"match.match_id": err_match_id})
-    #     logger.info('deleted matches with id {}, {}'.format(err_match_id, delete_result))
+    for err_match_id in error_ids:
+        delete_result = LGC_COL.delete_many({"match_id": err_match_id})
+        logger.info('deleted matches with id {}, {}'.format(err_match_id, delete_result))
 
 except Exception as e:
     logger.exception(e)
