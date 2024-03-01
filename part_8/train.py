@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score
 import pickle
 
 
-df = pd.read_csv('part_7/no_items/30min_42286x46_samples.csv')
+df = pd.read_csv('part_8/47k-63k/30min_63041x46_samples.csv')
 
 X = df.iloc[:, 0:-1].values
 y = df.iloc[:, -1].values
@@ -38,7 +38,7 @@ results.append({
     'accuracy_score': acc
 })
 
-with open('part_7/no_items/30min/cart_classifier.pkl', 'wb') as f:
+with open('part_8/trained_models/30min/cart_classifier.pkl', 'wb') as f:
     pickle.dump(gini_classifier, f)
 
 # --------------------------------
@@ -57,7 +57,7 @@ results.append({
     'accuracy_score': acc
 })
 
-with open('part_7/no_items/30min/c4.5_classifier.pkl', 'wb') as f:
+with open('part_8/trained_models/30min/c4.5_classifier.pkl', 'wb') as f:
     pickle.dump(entropy_classifier, f)
 
 # --------------------------------
@@ -77,7 +77,7 @@ print('Extra Trees Classifier', result['accuracy_score'])
 result['classifier'] = 'Extra Trees Classifier'
 results.append(result)
 
-with open('part_7/no_items/30min/et_classifier.pkl', 'wb') as f:
+with open('part_8/trained_models/30min/et_classifier.pkl', 'wb') as f:
     pickle.dump(et_classifier, f)
 
 # --------------------------------
@@ -101,7 +101,7 @@ print('Gradient Boosting', result['accuracy_score'])
 result['classifier'] = 'Gradient Boosting'
 results.append(result)
 
-with open('part_7/no_items/30min/gb_classifier.pkl', 'wb') as f:
+with open('part_8/trained_models/30min/gb_classifier.pkl', 'wb') as f:
     pickle.dump(gb_classifier, f)
 
 # --------------------------------
@@ -122,7 +122,7 @@ print('Hist Gradient Boosting', result['accuracy_score'])
 result['classifier'] = 'Hist Gradient Boosting'
 results.append(result)
 
-with open('part_7/no_items/30min/hgb_classifier.pkl', 'wb') as f:
+with open('part_8/trained_models/30min/hgb_classifier.pkl', 'wb') as f:
     pickle.dump(hgb_classifier, f)
 
 # --------------------------------
@@ -143,7 +143,7 @@ print('Random Forest', result['accuracy_score'])
 result['classifier'] = 'Random Forest'
 results.append(result)
 
-with open('part_7/no_items/30min/rf_classifier.pkl', 'wb') as f:
+with open('part_8/trained_models/30min/rf_classifier.pkl', 'wb') as f:
     pickle.dump(rf_classifier, f)
 
 # --------------------------------
@@ -165,5 +165,5 @@ print('Adaboost', result['accuracy_score'])
 result['classifier'] = 'Adaboost'
 results.append(result)
 
-with open('part_7/no_items/30min/ab_classifier.pkl', 'wb') as f:
+with open('part_8/trained_models/30min/ab_classifier.pkl', 'wb') as f:
     pickle.dump(ab_classifier, f)

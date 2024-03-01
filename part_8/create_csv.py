@@ -132,4 +132,4 @@ print('shape after dropna:', df.shape)
 df = df.drop_duplicates()
 print('shape after drop_duplicates:', df.shape)
 
-df.to_csv(f'part_7/no_items/30min_{df.shape[0]}x{df.shape[1]}_samples.csv', index=False)
+df.to_csv(f'part_8/new/30min_{df.shape[0]}x{df.shape[1]}_samples.csv', index=False)
