@@ -6,164 +6,172 @@ from sklearn.ensemble import ExtraTreesClassifier, GradientBoostingClassifier, H
 from sklearn.metrics import accuracy_score
 import pickle
 
+foldernames = ['10min', '20min', '30min']
+filenames = ['10min_83723x46_samples.csv', '20min_72912x46_samples.csv', '30min_98468x46_samples.csv']
 
-df = pd.read_csv('part_8/47k-63k/30min_63041x46_samples.csv')
+for i_f, filename in enumerate(filenames):
 
-X = df.iloc[:, 0:-1].values
-y = df.iloc[:, -1].values
+    df = pd.read_csv(f'part_8/new/{filename}')
 
-le = LabelEncoder()
-y = le.fit_transform(y)
+    X = df.iloc[:, 0:-1].values
+    y = df.iloc[:, -1].values
 
-for i, winner in enumerate(le.classes_):
-    print(i, '=', winner)
+    le = LabelEncoder()
+    y = le.fit_transform(y)
 
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.1, random_state=1)
+    for i, winner in enumerate(le.classes_):
+        print(i, '=', winner)
 
-results = []
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.1, random_state=1)
 
-# --------------------------------
-criterion = 'gini'
+    results = []
 
-gini_classifier = DecisionTreeClassifier(criterion=criterion, random_state=1)
-gini_classifier.fit(X_train, y_train)
-y_pred = gini_classifier.predict(X_test)
+    # --------------------------------
+    criterion = 'gini'
 
-acc = accuracy_score(y_test, y_pred)
-print('CART', acc)
-results.append({
-    'classifier': 'CART',
-    'criterion': criterion,
-    'accuracy_score': acc
-})
+    gini_classifier = DecisionTreeClassifier(criterion=criterion, random_state=1)
+    gini_classifier.fit(X_train, y_train)
+    y_pred = gini_classifier.predict(X_test)
 
-with open('part_8/trained_models/30min/cart_classifier.pkl', 'wb') as f:
-    pickle.dump(gini_classifier, f)
+    acc = accuracy_score(y_test, y_pred)
+    print('CART', acc)
+    results.append({
+        'classifier': 'CART',
+        'criterion': criterion,
+        'accuracy_score': acc
+    })
 
-# --------------------------------
-criterion = 'entropy'
+    with open(f'part_8/trained_models/{foldernames[i_f]}/cart_classifier.pkl', 'wb') as f:
+        pickle.dump(gini_classifier, f)
 
-entropy_classifier = DecisionTreeClassifier(
-    criterion=criterion, random_state=1)
-entropy_classifier.fit(X_train, y_train)
-y_pred = entropy_classifier.predict(X_test)
+    # --------------------------------
+    criterion = 'entropy'
 
-acc = accuracy_score(y_test, y_pred)
-print('C4.5', acc)
-results.append({
-    'classifier': 'C4.5',
-    'criterion': criterion,
-    'accuracy_score': acc
-})
+    entropy_classifier = DecisionTreeClassifier(
+        criterion=criterion, random_state=1)
+    entropy_classifier.fit(X_train, y_train)
+    y_pred = entropy_classifier.predict(X_test)
 
-with open('part_8/trained_models/30min/c4.5_classifier.pkl', 'wb') as f:
-    pickle.dump(entropy_classifier, f)
+    acc = accuracy_score(y_test, y_pred)
+    print('C4.5', acc)
+    results.append({
+        'classifier': 'C4.5',
+        'criterion': criterion,
+        'accuracy_score': acc
+    })
 
-# --------------------------------
-etc_results = []
+    with open(f'part_8/trained_models/{foldernames[i_f]}/c4.5_classifier.pkl', 'wb') as f:
+        pickle.dump(entropy_classifier, f)
 
-et_classifier = ExtraTreesClassifier(
-    criterion='entropy', n_estimators=150, random_state=1)
-et_classifier.fit(X_train, y_train)
-y_pred = et_classifier.predict(X_test)
-etc_results.append({
-    'criterion': 'entropy',
-    'n_estimators': 150,
-    'accuracy_score': accuracy_score(y_test, y_pred)})
+    # --------------------------------
+    etc_results = []
 
-result = max(etc_results, key=lambda x: x['accuracy_score'])
-print('Extra Trees Classifier', result['accuracy_score'])
-result['classifier'] = 'Extra Trees Classifier'
-results.append(result)
+    et_classifier = ExtraTreesClassifier(
+        criterion='entropy', n_estimators=150, random_state=1)
+    et_classifier.fit(X_train, y_train)
+    y_pred = et_classifier.predict(X_test)
+    etc_results.append({
+        'criterion': 'entropy',
+        'n_estimators': 150,
+        'accuracy_score': accuracy_score(y_test, y_pred)})
 
-with open('part_8/trained_models/30min/et_classifier.pkl', 'wb') as f:
-    pickle.dump(et_classifier, f)
+    result = max(etc_results, key=lambda x: x['accuracy_score'])
+    print('Extra Trees Classifier', result['accuracy_score'])
+    result['classifier'] = 'Extra Trees Classifier'
+    results.append(result)
 
-# --------------------------------
-gb_results = []
+    with open(f'part_8/trained_models/{foldernames[i_f]}/et_classifier.pkl', 'wb') as f:
+        pickle.dump(et_classifier, f)
 
-gb_classifier = GradientBoostingClassifier(
-    loss='log_loss', n_estimators=50, learning_rate=1, criterion='friedman_mse', max_depth=4, random_state=1)
-gb_classifier.fit(X_train, y_train)
-y_pred = gb_classifier.predict(X_test)
-gb_results.append({
-    'loss': 'log_loss',
-    'learning_rate': 1,
-    'n_estimators': 50,
-    'criterion': 'friedman_mse',
-    'max_depth': 4,
-    'accuracy_score': accuracy_score(y_test, y_pred)
-})
+    # --------------------------------
+    gb_results = []
 
-result = max(gb_results, key=lambda x: x['accuracy_score'])
-print('Gradient Boosting', result['accuracy_score'])
-result['classifier'] = 'Gradient Boosting'
-results.append(result)
+    gb_classifier = GradientBoostingClassifier(
+        loss='log_loss', n_estimators=50, learning_rate=1, criterion='friedman_mse', max_depth=4, random_state=1)
+    gb_classifier.fit(X_train, y_train)
+    y_pred = gb_classifier.predict(X_test)
+    gb_results.append({
+        'loss': 'log_loss',
+        'learning_rate': 1,
+        'n_estimators': 50,
+        'criterion': 'friedman_mse',
+        'max_depth': 4,
+        'accuracy_score': accuracy_score(y_test, y_pred)
+    })
 
-with open('part_8/trained_models/30min/gb_classifier.pkl', 'wb') as f:
-    pickle.dump(gb_classifier, f)
+    result = max(gb_results, key=lambda x: x['accuracy_score'])
+    print('Gradient Boosting', result['accuracy_score'])
+    result['classifier'] = 'Gradient Boosting'
+    results.append(result)
 
-# --------------------------------
-hgb_results = []
+    with open(f'part_8/trained_models/{foldernames[i_f]}/gb_classifier.pkl', 'wb') as f:
+        pickle.dump(gb_classifier, f)
 
-hgb_classifier = HistGradientBoostingClassifier(
-    learning_rate=0.2, max_iter=100, random_state=1)
-hgb_classifier.fit(X_train, y_train)
-y_pred = hgb_classifier.predict(X_test)
-hgb_results.append({
-    'learning_rate': 0.2,
-    'max_iter': 100,
-    'accuracy_score': accuracy_score(y_test, y_pred)
-})
+    # --------------------------------
+    hgb_results = []
 
-result = max(hgb_results, key=lambda x: x['accuracy_score'])
-print('Hist Gradient Boosting', result['accuracy_score'])
-result['classifier'] = 'Hist Gradient Boosting'
-results.append(result)
+    hgb_classifier = HistGradientBoostingClassifier(
+        learning_rate=0.2, max_iter=100, random_state=1)
+    hgb_classifier.fit(X_train, y_train)
+    y_pred = hgb_classifier.predict(X_test)
+    hgb_results.append({
+        'learning_rate': 0.2,
+        'max_iter': 100,
+        'accuracy_score': accuracy_score(y_test, y_pred)
+    })
 
-with open('part_8/trained_models/30min/hgb_classifier.pkl', 'wb') as f:
-    pickle.dump(hgb_classifier, f)
+    result = max(hgb_results, key=lambda x: x['accuracy_score'])
+    print('Hist Gradient Boosting', result['accuracy_score'])
+    result['classifier'] = 'Hist Gradient Boosting'
+    results.append(result)
 
-# --------------------------------
-rf_results = []
+    with open(f'part_8/trained_models/{foldernames[i_f]}/hgb_classifier.pkl', 'wb') as f:
+        pickle.dump(hgb_classifier, f)
 
-rf_classifier = RandomForestClassifier(
-    n_estimators=50, criterion='gini', random_state=1)
-rf_classifier.fit(X_train, y_train)
-y_pred = rf_classifier.predict(X_test)
-rf_results.append({
-    'n_estimators': 50,
-    'criterion': 'gini',
-    'accuracy_score': accuracy_score(y_test, y_pred)
-})
+    # --------------------------------
+    rf_results = []
 
-result = max(rf_results, key=lambda x: x['accuracy_score'])
-print('Random Forest', result['accuracy_score'])
-result['classifier'] = 'Random Forest'
-results.append(result)
+    rf_classifier = RandomForestClassifier(
+        n_estimators=50, criterion='gini', random_state=1)
+    rf_classifier.fit(X_train, y_train)
+    y_pred = rf_classifier.predict(X_test)
+    rf_results.append({
+        'n_estimators': 50,
+        'criterion': 'gini',
+        'accuracy_score': accuracy_score(y_test, y_pred)
+    })
 
-with open('part_8/trained_models/30min/rf_classifier.pkl', 'wb') as f:
-    pickle.dump(rf_classifier, f)
+    result = max(rf_results, key=lambda x: x['accuracy_score'])
+    print('Random Forest', result['accuracy_score'])
+    result['classifier'] = 'Random Forest'
+    results.append(result)
 
-# --------------------------------
-ada_results = []
+    with open(f'part_8/trained_models/{foldernames[i_f]}/rf_classifier.pkl', 'wb') as f:
+        pickle.dump(rf_classifier, f)
 
-ab_classifier = AdaBoostClassifier(
-    n_estimators=50, learning_rate=0.1, algorithm='SAMME', random_state=0)
-ab_classifier.fit(X_train, y_train)
-y_pred = ab_classifier.predict(X_test)
-ada_results.append({
-    'n_estimators': 50,
-    'learning_rate': 0.1,
-    'algorithm': 'SAMME.R',
-    'accuracy_score': accuracy_score(y_test, y_pred)
-})
+    # --------------------------------
+    ada_results = []
 
-result = max(ada_results, key=lambda x: x['accuracy_score'])
-print('Adaboost', result['accuracy_score'])
-result['classifier'] = 'Adaboost'
-results.append(result)
+    ab_classifier = AdaBoostClassifier(
+        n_estimators=50, learning_rate=0.1, algorithm='SAMME', random_state=0)
+    ab_classifier.fit(X_train, y_train)
+    y_pred = ab_classifier.predict(X_test)
+    ada_results.append({
+        'n_estimators': 50,
+        'learning_rate': 0.1,
+        'algorithm': 'SAMME.R',
+        'accuracy_score': accuracy_score(y_test, y_pred)
+    })
 
-with open('part_8/trained_models/30min/ab_classifier.pkl', 'wb') as f:
-    pickle.dump(ab_classifier, f)
+    result = max(ada_results, key=lambda x: x['accuracy_score'])
+    print('Adaboost', result['accuracy_score'])
+    result['classifier'] = 'Adaboost'
+    results.append(result)
+
+    with open(f'part_8/trained_models/{foldernames[i_f]}/ab_classifier.pkl', 'wb') as f:
+        pickle.dump(ab_classifier, f)
+
+    with open(f'part_8/new/results.txt', 'a') as f:
+        f.write(f'{foldernames[i_f]}\n')
+        f.write(f'{results}\n')
