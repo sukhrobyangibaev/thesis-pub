@@ -22,25 +22,22 @@ for i in range(300, 3601, 300):
         counter += 1
         item_set = []
         
-        for i, player in enumerate(match["scoreboard"]["radiant"]["players"]):
-            item_set.append(str(player['item0']))
-            item_set.append(str(player['item1']))
-            item_set.append(str(player['item2']))
-            item_set.append(str(player['item3']))
-            item_set.append(str(player['item4']))
-            item_set.append(str(player['item5']))
-        
-        item_set_list.append(item_set)
-
-        item_set = []
-
-        for i, player in enumerate(match["scoreboard"]["dire"]["players"]):
-            item_set.append(str(player['item0']))
-            item_set.append(str(player['item1']))
-            item_set.append(str(player['item2']))
-            item_set.append(str(player['item3']))
-            item_set.append(str(player['item4']))
-            item_set.append(str(player['item5']))
+        if match['winner'] == 'radiant':
+            for i, player in enumerate(match["scoreboard"]["radiant"]["players"]):
+                item_set.append(str(player['item0']))
+                item_set.append(str(player['item1']))
+                item_set.append(str(player['item2']))
+                item_set.append(str(player['item3']))
+                item_set.append(str(player['item4']))
+                item_set.append(str(player['item5']))            
+        else:
+            for i, player in enumerate(match["scoreboard"]["dire"]["players"]):
+                item_set.append(str(player['item0']))
+                item_set.append(str(player['item1']))
+                item_set.append(str(player['item2']))
+                item_set.append(str(player['item3']))
+                item_set.append(str(player['item4']))
+                item_set.append(str(player['item5']))
 
         item_set_list.append(item_set)
 
