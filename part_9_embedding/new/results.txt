@@ -119,3 +119,34 @@ Gradient Boosting 0.8230800570380933
 Hist Gradient Boosting 0.8447749032389489
 Random Forest 0.8995722143002648
 Adaboost 0.7254023222652272
+
+--------------------------------------------------
+
+hero embeddings (mean) + item embeddings (mean)
+
+10min
+CART 0.6076490713587488
+C4.5 0.625733137829912
+Extra Trees Classifier 0.694770283479961
+Gradient Boosting 0.7140762463343109
+Hist Gradient Boosting 0.7265395894428153
+Random Forest 0.6868279569892473
+Adaboost 0.645772238514174
+
+20min
+CART 0.7387412202176009
+C4.5 0.740256163062939
+Extra Trees Classifier 0.8328053987054125
+Gradient Boosting 0.7739980718909241
+Hist Gradient Boosting 0.784464949731442
+Random Forest 0.799752100261672
+Adaboost 0.7098195840793279
+
+30min
+CART 0.8300387201956388
+C4.5 0.8400244548604036
+Extra Trees Classifier 0.9327491338903607
+Gradient Boosting 0.8276951294069697
+Hist Gradient Boosting 0.8448135316894233
+Random Forest 0.8984104340737722
+Adaboost 0.7179539433462401
