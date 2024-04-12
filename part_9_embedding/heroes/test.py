@@ -1,7 +1,7 @@
 from gensim.models import Word2Vec
 
 # Load the model from the file
-model = Word2Vec.load("dota2_hero_embeddings.model")
+model = Word2Vec.load("part_9_embedding/heroes/dota2_hero_embeddings.model")
 
 # Use the model
 # Get the vector for a specific hero_id
