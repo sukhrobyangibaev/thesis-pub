@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score
 import pickle
 
 foldernames = ['10min', '20min', '30min']
-filenames = ['10min_81832x50_samples.csv', '20min_72606x50_samples.csv', '30min_98139x50_samples.csv']
+filenames = ['10min_81822x50_samples.csv', '20min_72595x50_samples.csv', '30min_98133x50_samples.csv']
 
 for i_f, filename in enumerate(filenames):
 
