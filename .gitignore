@@ -6,3 +6,4 @@ part_6/**/*.csv
 .DS_Store
 .env
 venv
+*.csv
