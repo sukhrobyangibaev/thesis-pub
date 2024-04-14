@@ -254,8 +254,8 @@ xpm_scaled = scaler.fit_transform(xpm).flatten()
 # plt.plot(durations, hgb_predictions, label='HGB')
 # plt.plot(durations, gb_predictions, label='GB')
 plt.plot(smooth_durations, smooth_predictions, label='Average Prediction', color='green', linestyle='-')
-plt.plot(durations, net_worth_scaled, label='Net Worth Difference (scaled)', linestyle='-', color='blue')
-plt.plot(durations, xpm_scaled, label='XPM Difference (scaled)', linestyle='-', color='red')
+# plt.plot(durations, net_worth_scaled, label='Net Worth Difference (scaled)', linestyle='-', color='blue')
+# plt.plot(durations, xpm_scaled, label='XPM Difference (scaled)', linestyle='-', color='red')
 plt.axhline(50, color='black', linestyle='--')  # Add horizontal line at y=50
 
 plt.legend()
