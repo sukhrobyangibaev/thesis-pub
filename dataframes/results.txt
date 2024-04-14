@@ -1,0 +1,167 @@
+# -------------------------- mean embeddings
+10min_96703x50
+CART 0.6097611415572329
+C4.5 0.6157584531072278
+Extra Trees Classifier 0.6852445455485472
+Gradient Boosting 0.7024092648123255
+Hist Gradient Boosting 0.7160583186847276
+Random Forest 0.676248578223555
+Adaboost 0.6468824320132355
+
+20min_85955x50
+CART 0.7384830153559795
+C4.5 0.7655886458818055
+Extra Trees Classifier 0.8246859004187994
+Gradient Boosting 0.7574453234062355
+Hist Gradient Boosting 0.7697766402978129
+Random Forest 0.800721265704979
+Adaboost 0.7103303862261517
+
+30min_116337x50
+CART 0.839264225545814
+C4.5 0.8353102974041602
+Extra Trees Classifier 0.9330410864706894
+Gradient Boosting 0.8184631253223311
+Hist Gradient Boosting 0.8312704143029053
+Random Forest 0.9031287605294825
+Adaboost 0.7280385078219013
+
+# ---------------------------- all items
+10min_98441x108.csv
+CART 0.5926866429659726
+C4.5 0.5891315388522093
+Extra Trees Classifier 0.6463179278821737
+Gradient Boosting 0.6926358557643474
+Hist Gradient Boosting 0.7008633824276282
+Random Forest 0.6433722701879127
+Adaboost 0.6448958862366684
+
+20min_87017x108.csv
+CART 0.6782348885313721
+C4.5 0.6883475063203861
+Extra Trees Classifier 0.7210985980234429
+Gradient Boosting 0.7531601930590669
+Hist Gradient Boosting 0.7472994713858883
+Random Forest 0.7098368191220409
+Adaboost 0.7032866007814296
+
+30min_117935x108.csv
+CART 0.7714091911141259
+C4.5 0.7851449889774461
+Extra Trees Classifier 0.8133796845853823
+Gradient Boosting 0.8207563167712396
+Hist Gradient Boosting 0.8227912497880278
+Random Forest 0.7810751229438697
+Adaboost 0.7309648974054604
+
+#--------------------------------
+['duration', 'radiant_series_wins', 'dire_series_wins', 'score', '0_rts',
+       '1_rts', '2_rts', '3_rts', '4_rts', '5_rts', '6_rts', '7_rts', '8_rts',
+       '9_rts', '10_rts', '0_dts', '1_dts', '2_dts', '3_dts', '4_dts', '5_dts',
+       '6_dts', '7_dts', '8_dts', '9_dts', '10_dts', '0_rbs', '1_rbs', '2_rbs',
+       '3_rbs', '4_rbs', '5_rbs', '0_dbs', '1_dbs', '2_dbs', '3_dbs', '4_dbs',
+       '5_dbs', 'net_worth', 'assissts', 'last_hits', 'gold', 'level', 'gpm',
+       'xpm', 'winner']
+
+ 10min_96703x46.csv
+CART 0.5770861338020887
+C4.5 0.5736738703339882
+Extra Trees Classifier 0.6471926377830628
+Gradient Boosting 0.643883776238238
+Hist Gradient Boosting 0.6507083031744391
+Random Forest 0.6405749146934133
+Adaboost 0.6468824320132355
+
+ 20min_85955x46.csv
+CART 0.6527454630060493
+C4.5 0.6573987901349465
+Extra Trees Classifier 0.7693113075849232
+Gradient Boosting 0.7077710563052583
+Hist Gradient Boosting 0.7197533736621684
+Random Forest 0.748371335504886
+Adaboost 0.7103303862261517
+
+ 30min_116337x46.csv
+CART 0.7570912841670965
+C4.5 0.7498710675605983
+Extra Trees Classifier 0.8961664088017879
+Gradient Boosting 0.7618188069451607
+Hist Gradient Boosting 0.7774626095925735
+Random Forest 0.8503524153343648
+Adaboost 0.7280385078219013
+
+# ------------------------------------------
+Index(['duration', 'radiant_series_wins', 'dire_series_wins', 'score', '0_rts',
+       '1_rts', '2_rts', '3_rts', '4_rts', '5_rts', '6_rts', '7_rts', '8_rts',
+       '9_rts', '10_rts', '0_dts', '1_dts', '2_dts', '3_dts', '4_dts', '5_dts',
+       '6_dts', '7_dts', '8_dts', '9_dts', '10_dts', '0_rbs', '1_rbs', '2_rbs',
+       '3_rbs', '4_rbs', '5_rbs', '0_dbs', '1_dbs', '2_dbs', '3_dbs', '4_dbs',
+       '5_dbs', 'radiant_hero_winrates', 'dire_hero_winrates', 'net_worth',
+       'assissts', 'last_hits', 'gold', 'level', 'gpm', 'xpm', 'winner'],
+      dtype='object')
+Processing matches...
+
+ 10min_96729x48.csv
+CART 0.643026982321927
+C4.5 0.6367207691512458
+Extra Trees Classifier 0.6962679623694821
+Gradient Boosting 0.7152899824253075
+Hist Gradient Boosting 0.7344153830249147
+Random Forest 0.6864468107102243
+Adaboost 0.6541920810503463
+
+ 20min_86037x48.csv
+CART 0.7703393770339377
+C4.5 0.7752208275220828
+Extra Trees Classifier 0.8178754067875407
+Gradient Boosting 0.7640632264063226
+Hist Gradient Boosting 0.7685960018596002
+Random Forest 0.791724779172478
+Adaboost 0.6952580195258019
+
+ 30min_116453x48.csv
+CART 0.860638845955693
+C4.5 0.8711145457667869
+Extra Trees Classifier 0.9282156963764383
+Gradient Boosting 0.8258629572385369
+Hist Gradient Boosting 0.8395157135497167
+Random Forest 0.9036579082946935
+Adaboost 0.7238536836682122
+
+# -----------------------------------
+Index(['duration', 'radiant_series_wins', 'dire_series_wins', 'score', '0_rts',
+       '1_rts', '2_rts', '3_rts', '4_rts', '5_rts', '6_rts', '7_rts', '8_rts',
+       '9_rts', '10_rts', '0_dts', '1_dts', '2_dts', '3_dts', '4_dts', '5_dts',
+       '6_dts', '7_dts', '8_dts', '9_dts', '10_dts', '0_rbs', '1_rbs', '2_rbs',
+       '3_rbs', '4_rbs', '5_rbs', '0_dbs', '1_dbs', '2_dbs', '3_dbs', '4_dbs',
+       '5_dbs', 'hero_winrate_diff', 'net_worth', 'assissts', 'last_hits',
+       'gold', 'level', 'gpm', 'xpm', 'winner'],
+      dtype='object')
+Processing matches...
+
+ 10min_96729x47.csv
+CART 0.6070505530859093
+C4.5 0.5995037733898481
+Extra Trees Classifier 0.6766256590509666
+Gradient Boosting 0.6903752713739274
+Hist Gradient Boosting 0.6827251111340845
+Random Forest 0.6642199937971673
+Adaboost 0.6541920810503463
+
+ 20min_86037x47.csv
+CART 0.7183867968386797
+C4.5 0.7343096234309623
+Extra Trees Classifier 0.7947466294746629
+Gradient Boosting 0.7453509995351
+Hist Gradient Boosting 0.7437238493723849
+Random Forest 0.7718503021850303
+Adaboost 0.6952580195258019
+
+ 30min_116453x47.csv
+CART 0.8258629572385369
+C4.5 0.8260346900223252
+Extra Trees Classifier 0.9123304138760089
+Gradient Boosting 0.8108363386570496
+Hist Gradient Boosting 0.8040528936974068
+Random Forest 0.8811609136184098
+Adaboost 0.7238536836682122
