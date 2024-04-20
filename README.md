@@ -41,22 +41,56 @@
 - [Open Dota API](part_3/Open%20Dota%20API/open_dota_api.md)
 - [Steam API](part_3/Steam%20API/steam_api.md)
 
-## Data Retrieval from Steam API: Extracting Gaming Insights.
-- [Collecting Current Top Live Games Data with GetTopLiveGame API and Gathering Real-time Match Statistics using GetRealtimeStats API](part_4/Miners/Steam/RealtimeStats.py)
-- [Retrieving Live Professional Match Statistics with getLiveLeagueGames API](part_4/Miners/Steam/LiveLeagueGames.py)
-- [Determining Match Winners: Utilizing GetMatchDetails API](part_4/Miners/Steam/GetWinImportToDB.py)
+## Implementing Data Miners for Real-Time Data Acquisition
+
+### Miners For Public Matches
+
+#### [`RealtimeStats.py`](part_4/Miners/Steam/RealtimeStats.py)
+
+This Python script continuously fetches real-time statistics for top live Dota 2 games from the Dota 2 API and stores them in a MongoDB collection for further analysis.
+
+#### [`GetWinImportToDB.py`](part_4/Miners/Steam/GetWinImportToDB.py)
+
+This Python script retrieves match details for unprocessed matches stored in a MongoDB collection and updates the collection with the winning team information.
+
+### Miners For League Matches
+
+#### [`LiveLeagueGames.py`](part_4/Miners/Steam/LiveLeagueGames.py)
+
+This script continuously fetches live league games data from the Dota 2 API and stores them in a MongoDB collection for real-time analysis.
+
+#### [`GetLeagueWin.py`](part_4/Miners/Steam/GetLeagueWin.py)
+
+This Python script retrieves match details from the Dota 2 API for matches stored in a MongoDB collection. It iterates through unprocessed match IDs, retrieves match details, and updates the database with the winning team information.
+
 
 ## Training Models (Public Matches)
-- [Training Decision Tree Models with 1,000 Samples of Mined Data](New_Data/1000/decision_trees.ipynb)
-- [Training Decision Tree Models with 15,000 Samples of Mined Data](New_Data/multi/15k/all_game_times/decision_trees.ipynb)
-- [Training Decision Tree Models with 20,000 Samples of Mined Data](New_Data/multi/20k/all_game_times/decision_trees.ipynb)
-- [Training Decision Tree Models with 30,000 Samples of Mined Data](New_Data/multi/30k/decision_trees.ipynb)
-- [Training Decision Tree Models with 40,000 Samples of Mined Data](New_Data/multi/40k/decision_trees.ipynb)
+
+This section presents the performance of various decision tree-based models trained on different sizes of public match datasets.
+
+### Notebooks
+
+- [1,000 samples](part_5/1000/decision_trees.ipynb)
+- [15,000 samples](part_5/15k/all_game_times/decision_trees.ipynb)
+- [20,000 samples](part_5/20k/all_game_times/decision_trees.ipynb)
+- [30,000 samples](part_5/30k/decision_trees.ipynb)
+- [40,000 samples](part_5/40k/decision_trees.ipynb)
+
+### Model Performance
+
+| Data           | CART | C4.5 | Extra Trees Classifier | Gradient Boosting | Hist Gradient Boosting | Random Forest | Adaboost |
+| -------------- | ---- | ---- | ---------------------- | ----------------- | ---------------------- | ------------- | -------- |
+| 1,000 samples  | 65.6 | 61.4 | 66.6                   | 64.5              | 71.8                   | 71.8          | 66.6     |
+| 15,000 samples | 89.7 | 89.5 | 93.0                   | 93.6              | 98.7                   | 91.3          | 72.3     |
+| 20,000 samples | 77.6 | 76.5 | 85.8                   | 83.1              | 89.1                   | 83.2          | 70.6     |
+| 30,000 samples | 75.8 | 75.8 | 85.2                   | 81.2              | 87.9                   | 81.1          | 69.3     |
+| 40,000 samples | 75.1 | 74.7 | 85.4                   | 82.1              | 88.0                   | 81.7          | 70.6     |
+
 
 ## Training Models (League Matches)
-- [Training Decision Tree Models with 20,000 Samples of Mined Data](part_6/20k/decision_trees.ipynb)
-- [Training Decision Tree Models with 50,000 Samples of Mined Data](part_6/53k/model_scores.txt)
-- [Training Decision Tree Models with 100,000 Samples of Mined Data](part_6/100k/model_scores.txt)
+- [20,000 samples](part_6/20k/decision_trees.ipynb)
+- [50,000 samples](part_6/53k/model_scores.txt)
+- [100,000 samples](part_6/100k/model_scores.txt)
 
 ## Training Models (League Matches, 3 stages of the game)
-- [Training Decision Tree Models with 100,000 Samples of Mined Data](part_7/model_scores.txt)
+- [100,000 samples](part_7/model_scores.txt)
