@@ -52,7 +52,7 @@ with open('part_9_embedding/trained_models/30min/cart_classifier.pkl', 'rb') as 
     M30_AB_CLASSIFIER = pickle.load(f) 
 
 
-df = pd.read_csv('various_experiments/predict_in_timelines/27x50_samples.csv')
+df = pd.read_csv('various_experiments/predict_in_timelines/64x50_samples.csv')
 
 X = df.iloc[:, 0:-1].values
 
@@ -236,7 +236,8 @@ for row in X:
 
 durations = np.array(durations) / 60
 
-average_predictions = np.mean([et_predictions, rf_predictions, hgb_predictions, gb_predictions], axis=0)
+average_predictions = np.mean([et_predictions, rf_predictions, hgb_predictions], axis=0)
+# average_predictions = np.mean([et_predictions, rf_predictions, hgb_predictions, gb_predictions], axis=0)
 spl = UnivariateSpline(durations, average_predictions)
 smooth_durations = np.linspace(np.min(durations), np.max(durations), 500)
 smooth_predictions = spl(smooth_durations)
@@ -250,24 +251,25 @@ xpm = np.array(xpm).reshape(-1, 1)
 xpm_scaled = scaler.fit_transform(xpm).flatten()
 
 # Plotting
-# plt.plot(durations, et_predictions, label='ET')
-# plt.plot(durations, rf_predictions, label='RF')
-# plt.plot(durations, hgb_predictions, label='HGB')
-# plt.plot(durations, gb_predictions, label='GB')
-plt.plot(smooth_durations, smooth_predictions, label='Average Prediction', color='green', linestyle='-')
-# plt.plot(durations, net_worth_scaled, label='Net Worth Difference (scaled)', linestyle='-', color='blue')
-# plt.plot(durations, xpm_scaled, label='XPM Difference (scaled)', linestyle='-', color='red')
+plt.plot(durations, et_predictions, label='Extra Tree Classifier', linestyle='-', color='red')
+plt.plot(durations, rf_predictions, label='Random Forest Classifier', linestyle='-', color='blue')
+plt.plot(durations, hgb_predictions, label='Hist Gradient Boosting Classifier', linestyle='-', color='green')
+# plt.plot(durations, gb_predictions, label='GB') # not good enough
+plt.plot(smooth_durations, smooth_predictions, label='Average (ET, RF, HGB)', linestyle='-', color='black')
+plt.plot(durations, net_worth_scaled, label='Net Worth Difference (scaled)', linestyle='-', color='blue')
+plt.plot(durations, xpm_scaled, label='XPM Difference (scaled)', linestyle='-', color='red')
+
 plt.axhline(50, color='black', linestyle='--')  # Add horizontal line at y=50
 
-plt.legend()
+plt.legend(loc='upper right')
 plt.xlabel('Duration (minutes)')
 plt.ylabel('Prediction (%)')
-plt.title('LGD vs OG')
+plt.title('L1GA TEAM vs NAVI JUNIOR')
 plt.ylim(0, 100)
 plt.yticks([0, 25, 50, 75, 100], [100, 75, 50, 75, 100])
 
 # Add labels at the top and bottom of the y-axis
-plt.text(0, 2, 'Radiant Win', ha='left', va='bottom')
-plt.text(0, 98, 'Dire Win', ha='left', va='top')
+plt.text(0, 2, 'Dire Win', ha='left', va='bottom')
+plt.text(0, 98, 'Radiant Win', ha='left', va='top')
 
 plt.show()
