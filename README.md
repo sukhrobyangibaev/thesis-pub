@@ -303,7 +303,41 @@ duration,radiant_series_wins,dire_series_wins,score,0_rts,1_rts,2_rts,3_rts,4_rt
 | ~85k samples (10-20min) | 71.3 | 72.7 | **78.9**               | 74.1              | 73.7                   | 76.0          | 69.5     |
 | ~116k samples (>20min)  | 81.4 | 81.3 | **91.0**               | 80.7              | 80.7                   | 86.7          | 72.3     |
 
+### Hero Winrate Difference + Item Winrate Difference + more samples
+
+| Data                     | CART | C4.5 | Extra Trees Classifier | Gradient Boosting | Hist Gradient Boosting | Random Forest | Adaboost |
+| ------------------------ | ---- | ---- | ---------------------- | ----------------- | ---------------------- | ------------- | -------- |
+| ~118k samples (<10min)   | 59.7 | 59.2 | **66.6**               | 67.6              | 66.3                   | 66.2          | 64.0     |
+| ~105k samples (10-20min) | 70.1 | 71.9 | **78.5**               | 73.9              | 73.2                   | 75.6          | 70.0     |
+| ~142k samples (>20min)   | 80.1 | 81.6 | **90.5**               | 79.4              | 79.5                   | 86.1          | 72.63    |
+
 ## Predicting Match Winner in Timelines
+
+### L1GA TEAM (radiant) vs NAVI JUNIOR (dire, winner)
 
 - [`create_csv.py`](various_experiments/predict_in_timelines/create_csv.py)
 - [`predict.py`](various_experiments/predict_in_timelines/predict.py)
+
+### Extra Tree Classifier
+
+![etc](various_experiments/predict_in_timelines/results/etc.png)
+
+### Random Forest
+
+![rf](various_experiments/predict_in_timelines/results/rf.png)
+
+### Hist Gradient Boosting
+
+![hgb](various_experiments/predict_in_timelines/results/hgb.png)
+
+### Mean of [Extra Tree Classifier, Random Forest, Hist Gradient Boosting]
+
+![avg](various_experiments/predict_in_timelines/results/avg.png)
+
+### All in one + Mean
+
+![et_rf_hgb_avg](various_experiments/predict_in_timelines/results/et_rf_hgb_avg.png)
+
+### Mean, Net Worth Diff (scaled), Experience Per Minute Diff (scaled)
+
+![avg_net_xpm](various_experiments/predict_in_timelines/results/avg_net_xpm.png)
