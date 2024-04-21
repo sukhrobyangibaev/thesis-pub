@@ -249,6 +249,7 @@ net_worth_scaled = scaler.fit_transform(net_worth).flatten()
 xpm = np.array(xpm).reshape(-1, 1)
 xpm_scaled = scaler.fit_transform(xpm).flatten()
 
+# Plotting
 # plt.plot(durations, et_predictions, label='ET')
 # plt.plot(durations, rf_predictions, label='RF')
 # plt.plot(durations, hgb_predictions, label='HGB')
@@ -260,10 +261,13 @@ plt.axhline(50, color='black', linestyle='--')  # Add horizontal line at y=50
 
 plt.legend()
 plt.xlabel('Duration (minutes)')
-plt.ylabel('Prediction')
-plt.title('Prediction vs Duration')
+plt.ylabel('Prediction (%)')
+plt.title('LGD vs OG')
 plt.ylim(0, 100)
-plt.yticks(range(0, 101, 10))
+plt.yticks([0, 25, 50, 75, 100], [100, 75, 50, 75, 100])
 
+# Add labels at the top and bottom of the y-axis
+plt.text(0, 2, 'Radiant Win', ha='left', va='bottom')
+plt.text(0, 98, 'Dire Win', ha='left', va='top')
 
 plt.show()
