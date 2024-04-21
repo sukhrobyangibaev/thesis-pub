@@ -45,21 +45,21 @@
 
 ### Miners For Public Matches
 
-#### [`RealtimeStats.py`](part_4/Miners/Steam/RealtimeStats.py)
+[`RealtimeStats.py`](part_4/Miners/Steam/RealtimeStats.py)
 
 This Python script continuously fetches real-time statistics for top live Dota 2 games from the Dota 2 API and stores them in a MongoDB collection for further analysis.
 
-#### [`GetWinImportToDB.py`](part_4/Miners/Steam/GetWinImportToDB.py)
+[`GetWinImportToDB.py`](part_4/Miners/Steam/GetWinImportToDB.py)
 
 This Python script retrieves match details for unprocessed matches stored in a MongoDB collection and updates the collection with the winning team information.
 
 ### Miners For League Matches
 
-#### [`LiveLeagueGames.py`](part_4/Miners/Steam/LiveLeagueGames.py)
+[`LiveLeagueGames.py`](part_4/Miners/Steam/LiveLeagueGames.py)
 
 This script continuously fetches live league games data from the Dota 2 API and stores them in a MongoDB collection for real-time analysis.
 
-#### [`GetLeagueWin.py`](part_4/Miners/Steam/GetLeagueWin.py)
+[`GetLeagueWin.py`](part_4/Miners/Steam/GetLeagueWin.py)
 
 This Python script retrieves match details from the Dota 2 API for matches stored in a MongoDB collection. It iterates through unprocessed match IDs, retrieves match details, and updates the database with the winning team information.
 
@@ -302,3 +302,8 @@ duration,radiant_series_wins,dire_series_wins,score,0_rts,1_rts,2_rts,3_rts,4_rt
 | ~96k samples (<10min)   | 60.1 | 60.4 | **67.4**               | 68.8              | 67.9                   | 66.9          | 65.4     |
 | ~85k samples (10-20min) | 71.3 | 72.7 | **78.9**               | 74.1              | 73.7                   | 76.0          | 69.5     |
 | ~116k samples (>20min)  | 81.4 | 81.3 | **91.0**               | 80.7              | 80.7                   | 86.7          | 72.3     |
+
+## Predicting Match Winner in Timelines
+
+- [`create_csv.py`](various_experiments/predict_in_timelines/create_csv.py)
+- [`predict.py`](various_experiments/predict_in_timelines/predict.py)
