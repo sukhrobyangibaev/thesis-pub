@@ -1,18 +1,71 @@
+import json
+import time
+from bs4 import BeautifulSoup
 import numpy as np
 import pymongo
 import pandas as pd
 from gensim.models import Word2Vec
+import requests
 
 
 MONGO_CLIENT = pymongo.MongoClient("mongodb://192.168.1.7:27017/")
 SDA_DB = MONGO_CLIENT["steam_dota_api"]
 PT_COL = SDA_DB["predict_timelines"]
 
-# Load the Word2Vec model
-heroes_model = Word2Vec.load("part_9_embedding/heroes/winner_hero_embeddings.model")
-items_model = Word2Vec.load("part_9_embedding/items/dota2_items_embeddings.model")
+match_id = 7702817490
 
-matches = PT_COL.find()
+# ---------------------------
+print("Fetching hero winrates...")
+heros_by_names = {}
+heroid_winrate = {}
+headers = {
+    'User-Agent': 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36'}
+page_link = 'https://www.dotabuff.com/heroes/winning'
+
+f = open('part_10_generate_train/heroes.json')
+data = json.load(f)
+
+for hero in data:
+    heros_by_names[hero['localized_name']] = hero['id']
+
+page_response = requests.get(page_link, timeout=5, headers=headers)
+soup = BeautifulSoup(page_response.content, "html.parser")
+trs = soup.find_all('tr')
+for tr in trs[1:]:
+    hero_name, winrate = tr.find_all('td')[1:3]
+    heroid_winrate[heros_by_names.get(hero_name.a.string)] = float(winrate['data-value'])
+
+print(heroid_winrate)
+time.sleep(2)
+# ----------------------------------------
+print("Fetching item winrates...")
+items_by_names = {}
+item_id_winrate = {}
+headers = {
+    'User-Agent': 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36'}
+page_link = 'https://www.dotabuff.com/items/winning'
+
+f = open('part_10_generate_train/items.json')
+data = json.load(f)
+
+for item in data.keys():
+    if 'dname' in data[item]:
+        items_by_names[data[item]['dname']] = data[item]['id']
+
+page_response = requests.get(page_link, timeout=5, headers=headers)
+soup = BeautifulSoup(page_response.content, "html.parser")
+trs = soup.find_all('tr')
+for tr in trs[1:]:
+    item_name, winrate = tr.find_all('td')[1:3]
+    item_id_winrate[items_by_names.get(item_name.a.string)] = float(winrate['data-value'])
+print(item_id_winrate)
+time.sleep(2)
+
+# Load the Word2Vec model
+# heroes_model = Word2Vec.load("part_9_embedding/heroes/winner_hero_embeddings.model")
+# items_model = Word2Vec.load("part_9_embedding/items/dota2_items_embeddings.model")
+
+matches = PT_COL.find({"match_id": match_id})
 
 matches_for_pd = []
 
@@ -68,24 +121,24 @@ for entry in matches:
         radiant_xpm = 0
         dire_xpm = 0
 
-        radiant_hero_embeddings = []
-        dire_hero_embeddings = []
+        radiant_hero_winrates = []
+        dire_hero_winrates = []
 
-        radiant_item_embeddings = []
-        dire_item_embeddings = []
+        radiant_item_winrates = []
+        dire_item_winrates = []
 
         if len(entry["scoreboard"]["radiant"]["players"]) != 5:
             continue
 
         for i, player in enumerate(entry["scoreboard"]["radiant"]["players"]):
-            radiant_item_embeddings.append(np.mean(items_model.wv[str(player["item0"])]))
-            radiant_item_embeddings.append(np.mean(items_model.wv[str(player["item1"])]))
-            radiant_item_embeddings.append(np.mean(items_model.wv[str(player["item2"])]))
-            radiant_item_embeddings.append(np.mean(items_model.wv[str(player["item3"])]))
-            radiant_item_embeddings.append(np.mean(items_model.wv[str(player["item4"])]))
-            radiant_item_embeddings.append(np.mean(items_model.wv[str(player["item5"])]))
+            radiant_item_winrates.append(item_id_winrate.get(player["item0"], 50))
+            radiant_item_winrates.append(item_id_winrate.get(player["item1"], 50))
+            radiant_item_winrates.append(item_id_winrate.get(player["item2"], 50))
+            radiant_item_winrates.append(item_id_winrate.get(player["item3"], 50))
+            radiant_item_winrates.append(item_id_winrate.get(player["item4"], 50))
+            radiant_item_winrates.append(item_id_winrate.get(player["item5"], 50))
 
-            radiant_hero_embeddings.append(np.mean(heroes_model.wv[str(player["hero_id"])]))
+            radiant_hero_winrates.append(heroid_winrate.get(player["hero_id"], 50))
 
             radiant_net_worth += player["net_worth"]
             radiant_assissts += player["assists"]
@@ -99,14 +152,14 @@ for entry in matches:
             continue
 
         for i, player in enumerate(entry["scoreboard"]["dire"]["players"]):
-            dire_item_embeddings.append(np.mean(items_model.wv[str(player["item0"])]))
-            dire_item_embeddings.append(np.mean(items_model.wv[str(player["item1"])]))
-            dire_item_embeddings.append(np.mean(items_model.wv[str(player["item2"])]))
-            dire_item_embeddings.append(np.mean(items_model.wv[str(player["item3"])]))
-            dire_item_embeddings.append(np.mean(items_model.wv[str(player["item4"])]))
-            dire_item_embeddings.append(np.mean(items_model.wv[str(player["item5"])]))
+            dire_item_winrates.append(item_id_winrate.get(player["item0"], 50))
+            dire_item_winrates.append(item_id_winrate.get(player["item1"], 50))
+            dire_item_winrates.append(item_id_winrate.get(player["item2"], 50))
+            dire_item_winrates.append(item_id_winrate.get(player["item3"], 50))
+            dire_item_winrates.append(item_id_winrate.get(player["item4"], 50))
+            dire_item_winrates.append(item_id_winrate.get(player["item5"], 50))
 
-            dire_hero_embeddings.append(np.mean(heroes_model.wv[str(player["hero_id"])]))
+            dire_hero_winrates.append(heroid_winrate.get(player["hero_id"], 50))
 
             dire_net_worth += player["net_worth"]
             dire_assissts += player["assists"]
@@ -117,11 +170,8 @@ for entry in matches:
             dire_xpm += player["xp_per_min"]
 
 
-        tmp['radiant_item_embeddings'] = np.mean(radiant_item_embeddings)
-        tmp['dire_item_embeddings'] = np.mean(dire_item_embeddings)
-
-        tmp['radiant_embeddings'] = np.mean(radiant_hero_embeddings)
-        tmp['dire_embeddings'] = np.mean(dire_hero_embeddings)
+        tmp['hero_winrate_diff'] = np.mean(radiant_hero_winrates) - np.mean(dire_hero_winrates)
+        tmp['item_winrate_diff'] = np.mean(radiant_item_winrates) - np.mean(dire_item_winrates)
 
         tmp["net_worth"] = radiant_net_worth - dire_net_worth
         tmp["assissts"] = radiant_assissts - dire_assissts
@@ -147,6 +197,6 @@ df = df.drop_duplicates()
 print("shape after drop_duplicates:", df.shape)
 
 df.to_csv(
-    f"various_experiments/predict_in_timelines/{df.shape[0]}x{df.shape[1]}_samples.csv",
+    f"various_experiments/predict_in_timelines/results/{match_id}/{df.shape[0]}x{df.shape[1]}_samples.csv",
     index=False,
 )
