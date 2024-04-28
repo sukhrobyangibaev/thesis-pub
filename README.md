@@ -319,35 +319,61 @@ duration,radiant_series_wins,dire_series_wins,score,0_rts,1_rts,2_rts,3_rts,4_rt
 | ~127k samples (10-20min) | 69.8 | 71.4 | **78.2**               | 73.0              | 72.6                   | 75.6          | 70.0     |
 | ~173k samples (>20min)   | 79.8 | 79.5 | **90.3**               | 78.6              | 78.7                   | 85.7          | 72.8     |
 
-## Predicting Match Winner in Timelines
+# Predicting Match Winner in Timelines
 
-### XG (radiant, winner) vs Tundra (dire)
+## XG (radiant, winner) vs Tundra (dire)
 
 - [`create_csv.py`](various_experiments/predict_in_timelines/create_csv.py)
 - [`predict.py`](various_experiments/predict_in_timelines/predict.py)
 
 
-### Dota Plus Prediction
+#### Dota Plus Prediction
 
 ![dp](various_experiments/predict_in_timelines/results/7702650896/dota_plus.png)
 
-### Extra Tree Classifier
+#### Extra Tree Classifier
 
 ![etc](various_experiments/predict_in_timelines/results/7702650896/et.png)
 
-### Random Forest
+#### Random Forest
 
 ![rf](various_experiments/predict_in_timelines/results/7702650896/rf.png)
 
-### Hist Gradient Boosting
+#### Hist Gradient Boosting
 
 ![hgb](various_experiments/predict_in_timelines/results/7702650896/hgb.png)
 
-### Mean of [Extra Tree Classifier, Random Forest, Hist Gradient Boosting]
+#### Mean of [Extra Tree Classifier, Random Forest, Hist Gradient Boosting]
 
 ![avg](various_experiments/predict_in_timelines/results/7702650896/avg.png)
 
-### All in one + Mean
+#### All in one + Mean
 
 ![et_rf_hgb_avg](various_experiments/predict_in_timelines/results/7702650896/all.png)
 
+
+## XG (radiant, winner) vs Tundra (dire)
+
+#### Dota Plus Prediction
+
+![dp](various_experiments/predict_in_timelines/results/7702817490/dota_plus.png)
+
+#### Extra Tree Classifier
+
+![etc](various_experiments/predict_in_timelines/results/7702817490/et.png)
+
+#### Random Forest
+
+![rf](various_experiments/predict_in_timelines/results/7702817490/rf.png)
+
+#### Hist Gradient Boosting
+
+![hgb](various_experiments/predict_in_timelines/results/7702817490/hgb.png)
+
+#### Mean of [Extra Tree Classifier, Random Forest, Hist Gradient Boosting]
+
+![avg](various_experiments/predict_in_timelines/results/7702817490/avg.png)
+
+#### All in one + Mean
+
+![et_rf_hgb_avg](various_experiments/predict_in_timelines/results/7702817490/all.png)
