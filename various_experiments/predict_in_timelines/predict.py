@@ -6,53 +6,53 @@ from scipy.interpolate import UnivariateSpline
 from sklearn.preprocessing import MinMaxScaler
 
 
-with open('part_9_embedding/trained_models/10min/et_classifier.pkl', 'rb') as f:
+with open('trained_models/10min/et_classifier.pkl', 'rb') as f:
     M10_ET_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/10min/rf_classifier.pkl', 'rb') as f:
+with open('trained_models/10min/rf_classifier.pkl', 'rb') as f:
     M10_RF_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/10min/hgb_classifier.pkl', 'rb') as f:
+with open('trained_models/10min/hgb_classifier.pkl', 'rb') as f:
     M10_HGB_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/10min/gb_classifier.pkl', 'rb') as f:
+with open('trained_models/10min/gb_classifier.pkl', 'rb') as f:
     M10_GB_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/10min/cart_classifier.pkl', 'rb') as f:
+with open('trained_models/10min/cart_classifier.pkl', 'rb') as f:
     M10_CART_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/10min/cart_classifier.pkl', 'rb') as f:
+with open('trained_models/10min/cart_classifier.pkl', 'rb') as f:
     M10_C45_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/10min/cart_classifier.pkl', 'rb') as f:
+with open('trained_models/10min/cart_classifier.pkl', 'rb') as f:
     M10_AB_CLASSIFIER = pickle.load(f)  
 
-with open('part_9_embedding/trained_models/20min/et_classifier.pkl', 'rb') as f:
+with open('trained_models/20min/et_classifier.pkl', 'rb') as f:
     M20_ET_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/20min/rf_classifier.pkl', 'rb') as f:
+with open('trained_models/20min/rf_classifier.pkl', 'rb') as f:
     M20_RF_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/20min/hgb_classifier.pkl', 'rb') as f:
+with open('trained_models/20min/hgb_classifier.pkl', 'rb') as f:
     M20_HGB_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/20min/gb_classifier.pkl', 'rb') as f:
+with open('trained_models/20min/gb_classifier.pkl', 'rb') as f:
     M20_GB_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/20min/cart_classifier.pkl', 'rb') as f:
+with open('trained_models/20min/cart_classifier.pkl', 'rb') as f:
     M20_CART_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/20min/cart_classifier.pkl', 'rb') as f:
+with open('trained_models/20min/cart_classifier.pkl', 'rb') as f:
     M20_C45_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/20min/cart_classifier.pkl', 'rb') as f:
+with open('trained_models/20min/cart_classifier.pkl', 'rb') as f:
     M20_AB_CLASSIFIER = pickle.load(f) 
 
-with open('part_9_embedding/trained_models/30min/et_classifier.pkl', 'rb') as f:
+with open('trained_models/30min/et_classifier.pkl', 'rb') as f:
     M30_ET_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/30min/rf_classifier.pkl', 'rb') as f:
+with open('trained_models/30min/rf_classifier.pkl', 'rb') as f:
     M30_RF_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/30min/hgb_classifier.pkl', 'rb') as f:
+with open('trained_models/30min/hgb_classifier.pkl', 'rb') as f:
     M30_HGB_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/30min/gb_classifier.pkl', 'rb') as f:
+with open('trained_models/30min/gb_classifier.pkl', 'rb') as f:
     M30_GB_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/30min/cart_classifier.pkl', 'rb') as f:
+with open('trained_models/30min/cart_classifier.pkl', 'rb') as f:
     M30_CART_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/30min/cart_classifier.pkl', 'rb') as f:
+with open('trained_models/30min/cart_classifier.pkl', 'rb') as f:
     M30_C45_CLASSIFIER = pickle.load(f)
-with open('part_9_embedding/trained_models/30min/cart_classifier.pkl', 'rb') as f:
+with open('trained_models/30min/cart_classifier.pkl', 'rb') as f:
     M30_AB_CLASSIFIER = pickle.load(f) 
 
 
-df = pd.read_csv('various_experiments/predict_in_timelines/64x50_samples.csv')
+df = pd.read_csv('various_experiments/predict_in_timelines/results/7702650896/41x48_samples.csv')
 
 X = df.iloc[:, 0:-1].values
 
@@ -251,25 +251,119 @@ xpm = np.array(xpm).reshape(-1, 1)
 xpm_scaled = scaler.fit_transform(xpm).flatten()
 
 # Plotting
+# --------------------------- Extra Tree Classifier
+plt.figure()
 plt.plot(durations, et_predictions, label='Extra Tree Classifier', linestyle='-', color='red')
-plt.plot(durations, rf_predictions, label='Random Forest Classifier', linestyle='-', color='blue')
-plt.plot(durations, hgb_predictions, label='Hist Gradient Boosting Classifier', linestyle='-', color='green')
-# plt.plot(durations, gb_predictions, label='GB') # not good enough
-plt.plot(smooth_durations, smooth_predictions, label='Average (ET, RF, HGB)', linestyle='-', color='black')
-plt.plot(durations, net_worth_scaled, label='Net Worth Difference (scaled)', linestyle='-', color='blue')
-plt.plot(durations, xpm_scaled, label='XPM Difference (scaled)', linestyle='-', color='red')
 
 plt.axhline(50, color='black', linestyle='--')  # Add horizontal line at y=50
-
 plt.legend(loc='upper right')
 plt.xlabel('Duration (minutes)')
 plt.ylabel('Prediction (%)')
-plt.title('L1GA TEAM vs NAVI JUNIOR')
+plt.title('Extra Tree Classifier')
 plt.ylim(0, 100)
 plt.yticks([0, 25, 50, 75, 100], [100, 75, 50, 75, 100])
-
-# Add labels at the top and bottom of the y-axis
 plt.text(0, 2, 'Dire Win', ha='left', va='bottom')
 plt.text(0, 98, 'Radiant Win', ha='left', va='top')
+
+# --------------------------- Random Forest Classifier
+plt.figure()
+plt.plot(durations, rf_predictions, label='Random Forest Classifier', linestyle='-', color='blue')
+
+plt.axhline(50, color='black', linestyle='--')  # Add horizontal line at y=50
+plt.legend(loc='upper right')
+plt.xlabel('Duration (minutes)')
+plt.ylabel('Prediction (%)')
+plt.title('Random Forest Classifier')
+plt.ylim(0, 100)
+plt.yticks([0, 25, 50, 75, 100], [100, 75, 50, 75, 100])
+plt.text(0, 2, 'Dire Win', ha='left', va='bottom')
+plt.text(0, 98, 'Radiant Win', ha='left', va='top')
+
+# --------------------------- Hist Gradient Boosting Classifier
+plt.figure()
+plt.plot(durations, hgb_predictions, label='Hist Gradient Boosting Classifier', linestyle='-', color='green')
+
+plt.axhline(50, color='black', linestyle='--')  # Add horizontal line at y=50
+plt.legend(loc='upper right')
+plt.xlabel('Duration (minutes)')
+plt.ylabel('Prediction (%)')
+plt.title(' Hist Gradient Boosting Classifier')
+plt.ylim(0, 100)
+plt.yticks([0, 25, 50, 75, 100], [100, 75, 50, 75, 100])
+plt.text(0, 2, 'Dire Win', ha='left', va='bottom')
+plt.text(0, 98, 'Radiant Win', ha='left', va='top')
+
+# --------------------------- Gradient Boosting Classifier
+# plt.figure()
+# plt.plot(durations, gb_predictions, label='GB') # not good enough
+
+# plt.axhline(50, color='black', linestyle='--')  # Add horizontal line at y=50
+# plt.legend(loc='upper right')
+# plt.xlabel('Duration (minutes)')
+# plt.ylabel('Prediction (%)')
+# plt.title('Gradient Boosting Classifier')
+# plt.ylim(0, 100)
+# plt.yticks([0, 25, 50, 75, 100], [100, 75, 50, 75, 100])
+# plt.text(0, 2, 'Dire Win', ha='left', va='bottom')
+# plt.text(0, 98, 'Radiant Win', ha='left', va='top')
+
+# --------------------------- Average of all classifiers
+plt.figure()
+plt.plot(smooth_durations, smooth_predictions, label='Average (ET, RF, HGB)', linestyle='-', color='black')
+
+plt.axhline(50, color='black', linestyle='--')  # Add horizontal line at y=50
+plt.legend(loc='upper right')
+plt.xlabel('Duration (minutes)')
+plt.ylabel('Prediction (%)')
+plt.title('Average (ET, RF, HGB)')
+plt.ylim(0, 100)
+plt.yticks([0, 25, 50, 75, 100], [100, 75, 50, 75, 100])
+plt.text(0, 2, 'Dire Win', ha='left', va='bottom')
+plt.text(0, 98, 'Radiant Win', ha='left', va='top')
+
+# --------------------------- ET, RF, HGB and Average
+plt.figure()
+plt.plot(durations, et_predictions, label='Extra Tree Classifier', linestyle='-', color='red')
+plt.plot(durations, rf_predictions, label='Random Forest Classifier', linestyle='-', color='blue')
+plt.plot(durations, hgb_predictions, label='Hist Gradient Boosting Classifier', linestyle='-', color='green')
+plt.plot(smooth_durations, smooth_predictions, label='Average (ET, RF, HGB)', linestyle='-', color='black')
+
+plt.axhline(50, color='black', linestyle='--')  # Add horizontal line at y=50
+plt.legend(loc='upper right')
+plt.xlabel('Duration (minutes)')
+plt.ylabel('Prediction (%)')
+plt.title('ET, RF, HGB and Average')
+plt.ylim(0, 100)
+plt.yticks([0, 25, 50, 75, 100], [100, 75, 50, 75, 100])
+plt.text(0, 2, 'Dire Win', ha='left', va='bottom')
+plt.text(0, 98, 'Radiant Win', ha='left', va='top')
+
+# --------------------------- Net Worth and XPM
+# plt.figure()
+# plt.plot(durations, net_worth_scaled, label='Net Worth Difference (scaled)', linestyle='-', color='blue')
+
+# plt.axhline(50, color='black', linestyle='--')  # Add horizontal line at y=50
+# plt.legend(loc='upper right')
+# plt.xlabel('Duration (minutes)')
+# plt.ylabel('Prediction (%)')
+# plt.title('Net Worth Difference (scaled)')
+# plt.ylim(0, 100)
+# plt.yticks([0, 25, 50, 75, 100], [100, 75, 50, 75, 100])
+# plt.text(0, 2, 'Dire Win', ha='left', va='bottom')
+# plt.text(0, 98, 'Radiant Win', ha='left', va='top')
+
+# --------------------------- Net Worth and XPM
+# plt.figure()
+# plt.plot(durations, xpm_scaled, label='XPM Difference (scaled)', linestyle='-', color='red')
+
+# plt.axhline(50, color='black', linestyle='--')  # Add horizontal line at y=50
+# plt.legend(loc='upper right')
+# plt.xlabel('Duration (minutes)')
+# plt.ylabel('Prediction (%)')
+# plt.title('XPM Difference (scaled)')
+# plt.ylim(0, 100)
+# plt.yticks([0, 25, 50, 75, 100], [100, 75, 50, 75, 100])
+# plt.text(0, 2, 'Dire Win', ha='left', va='bottom')
+# plt.text(0, 98, 'Radiant Win', ha='left', va='top')
 
 plt.show()
