@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score
 import pickle
 
 foldernames = ['10min', '20min', '30min']
-filenames = ['10min_118402x48.csv', '20min_105406x48.csv', '30min_142530x48.csv']
+filenames = ['10min_141847x48.csv', '20min_127293x48.csv', '30min_173765x48.csv']
 
 df = pd.read_csv(f'dataframes/{filenames[0]}')
 print(df.columns)

@@ -311,6 +311,14 @@ duration,radiant_series_wins,dire_series_wins,score,0_rts,1_rts,2_rts,3_rts,4_rt
 | ~105k samples (10-20min) | 70.1 | 71.9 | **78.5**               | 73.9              | 73.2                   | 75.6          | 70.0     |
 | ~142k samples (>20min)   | 80.1 | 81.6 | **90.5**               | 79.4              | 79.5                   | 86.1          | 72.63    |
 
+### Hero Winrate Difference + Item Winrate Difference + more samples
+
+| Data                     | CART | C4.5 | Extra Trees Classifier | Gradient Boosting | Hist Gradient Boosting | Random Forest | Adaboost |
+| ------------------------ | ---- | ---- | ---------------------- | ----------------- | ---------------------- | ------------- | -------- |
+| ~141k samples (<10min)   | 59.0 | 59.6 | **66.4**               | 66.7              | 66.5                   | 66.0          | 63.8     |
+| ~127k samples (10-20min) | 69.8 | 71.4 | **78.2**               | 73.0              | 72.6                   | 75.6          | 70.0     |
+| ~173k samples (>20min)   | 79.8 | 79.5 | **90.3**               | 78.6              | 78.7                   | 85.7          | 72.8     |
+
 ## Predicting Match Winner in Timelines
 
 ### L1GA TEAM (radiant) vs NAVI JUNIOR (dire, winner)
