@@ -42,6 +42,8 @@ unique_match_ids_unprocessed = LGC_COL.distinct(
     "match_id", {"winner": {"$exists": False}}
 )
 
+unique_match_ids_unprocessed = unique_match_ids_unprocessed[:1999]
+
 logger.info("found {} ids".format(len(unique_match_ids_unprocessed)))
 
 error_ids = []
