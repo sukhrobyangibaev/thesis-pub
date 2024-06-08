@@ -50,7 +50,7 @@ try:
         try:
             time.sleep(2)
             response = requests.get(
-                GET_MATCH_DETAILS_URL + match_id,
+                GET_MATCH_DETAILS_URL + str(match_id),
             )
             if response.status_code != 200:
                 logger.warning("failed getting math details, id = {}".format(match_id))
