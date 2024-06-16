@@ -30,8 +30,8 @@ page_response = requests.get(page_link, timeout=5, headers=headers)
 soup = BeautifulSoup(page_response.content, "html.parser")
 trs = soup.find_all('tr')
 for tr in trs[1:]:
-    hero_name, winrate = tr.find_all('td')[1:3]
-    heroid_winrate[heros_by_names.get(hero_name.a.string)] = float(winrate['data-value'])
+    hero_name, winrate = tr.find_all('td')[0:2]
+    heroid_winrate[heros_by_names.get(hero_name.get_text())] = float(winrate.get_text()[:-1])
 
 print(heroid_winrate)
 time.sleep(2)

@@ -327,6 +327,14 @@ duration,radiant_series_wins,dire_series_wins,score,0_rts,1_rts,2_rts,3_rts,4_rt
 | ~146k samples (10-20min) | 69.8 | 71.1 | **79.0**               | 74.1              | 73.6                   | 76.2          | 70.9     |
 | ~201k samples (>20min)   | 78.7 | 79.7 | **90.4**               | 79.0              | 78.9                   | 85.9          | 73.4     |
 
+### Hero Winrate Difference + Item Winrate Difference + more samples
+
+| Data                     | CART | C4.5 | Extra Trees Classifier | Gradient Boosting | Hist Gradient Boosting | Random Forest | Adaboost |
+| ------------------------ | ---- | ---- | ---------------------- | ----------------- | ---------------------- | ------------- | -------- |
+| ~301k samples (<10min)   | 58.5 | 58.8 | **66.4**               | 66.4              | 66.3                   | 65.4          | 64.7     |
+| ~273k samples (10-20min) | 68.3 | 68.9 | **77.4**               | 72.2              | 72.1                   | 75.1          | 70.9     |
+| ~376k samples (>20min)   | 77.4 | 78.5 | **89.0**               | 77.1              | 77.5                   | 84.6          | 74.2     |
+
 # Predicting Match Winner in Timelines
 
 ## XG (radiant, winner) vs Tundra (dire)
