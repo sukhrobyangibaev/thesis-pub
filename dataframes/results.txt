@@ -323,3 +323,45 @@ Gradient Boosting 0.7902431746978965
 Hist Gradient Boosting 0.7891491372022478
 Random Forest 0.8592669948779154
 Adaboost 0.7344472624198121
+
+
+---------------------------------------------------------------------
+
+Index(['duration', 'radiant_series_wins', 'dire_series_wins', 'score', '0_rts',
+       '1_rts', '2_rts', '3_rts', '4_rts', '5_rts', '6_rts', '7_rts', '8_rts',
+       '9_rts', '10_rts', '0_dts', '1_dts', '2_dts', '3_dts', '4_dts', '5_dts',
+       '6_dts', '7_dts', '8_dts', '9_dts', '10_dts', '0_rbs', '1_rbs', '2_rbs',
+       '3_rbs', '4_rbs', '5_rbs', '0_dbs', '1_dbs', '2_dbs', '3_dbs', '4_dbs',
+       '5_dbs', 'net_worth', 'assissts', 'last_hits', 'gold', 'level', 'gpm',
+       'xpm', 'winner'],
+      dtype='object')
+Processing matches...
+
+ 10min_301475x46.csv
+CART 0.5713148467560037
+C4.5 0.5725089558179647
+Extra Trees Classifier 0.6471739418866923
+Gradient Boosting 0.6457476449515722
+Hist Gradient Boosting 0.651817699349874
+Random Forest 0.640838529919066
+Adaboost 0.6432930874353191
+
+ 20min_273616x46.csv
+CART 0.6473941963306776
+C4.5 0.6440318690154229
+Extra Trees Classifier 0.7535633360134493
+Gradient Boosting 0.7131788611943571
+Hist Gradient Boosting 0.7162853592573643
+Random Forest 0.7327315254732841
+Adaboost 0.7094145164827133
+
+ 30min_376092x46.csv
+CART 0.7342196224408402
+C4.5 0.7340866790747141
+Extra Trees Classifier 0.878197287955331
+Gradient Boosting 0.7585748471151289
+Hist Gradient Boosting 0.7655144908269077
+Random Forest 0.8336346716298857
+Adaboost 0.7427279978729061
+
+Execution time: 7 minutes and 50.84282398223877 seconds

@@ -4,65 +4,67 @@ from bs4 import BeautifulSoup
 import numpy as np
 import pymongo
 import pandas as pd
-from gensim.models import Word2Vec
+# from gensim.models import Word2Vec
 import requests
 
+# Start the timer
+start_time = time.time()
 
-MONGO_CLIENT = pymongo.MongoClient("mongodb://192.168.1.7:27017/")
+MONGO_CLIENT = pymongo.MongoClient("mongodb://localhost:27017/")
 SDA_DB = MONGO_CLIENT["steam_dota_api"]
 LGC_COL = SDA_DB["league_games_col"]
 
 # ---------------------------
-print("Fetching hero winrates...")
-heros_by_names = {}
-heroid_winrate = {}
-headers = {
-    'User-Agent': 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36'}
-page_link = 'https://www.dotabuff.com/heroes/winning'
+# print("Fetching hero winrates...")
+# heros_by_names = {}
+# heroid_winrate = {}
+# headers = {
+#     'User-Agent': 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36'}
+# page_link = 'https://www.dotabuff.com/heroes/winning'
 
-f = open('part_10_generate_train/heroes.json')
-data = json.load(f)
+# f = open('part_10_generate_train/heroes.json')
+# data = json.load(f)
 
-for hero in data:
-    heros_by_names[hero['localized_name']] = hero['id']
+# for hero in data:
+#     heros_by_names[hero['localized_name']] = hero['id']
 
-page_response = requests.get(page_link, timeout=5, headers=headers)
-soup = BeautifulSoup(page_response.content, "html.parser")
-trs = soup.find_all('tr')
-for tr in trs[1:]:
-    hero_name, winrate = tr.find_all('td')[0:2]
-    heroid_winrate[heros_by_names.get(hero_name.get_text())] = float(winrate.get_text()[:-1])
+# page_response = requests.get(page_link, timeout=5, headers=headers)
+# soup = BeautifulSoup(page_response.content, "html.parser")
+# trs = soup.find_all('tr')
+# for tr in trs[1:]:
+#     hero_name, winrate = tr.find_all('td')[0:2]
+#     heroid_winrate[heros_by_names.get(hero_name.get_text())] = float(winrate.get_text()[:-1])
 
-print(heroid_winrate)
-time.sleep(2)
+# print(heroid_winrate)
+# time.sleep(2)
 # ----------------------------------------
-print("Fetching item winrates...")
-items_by_names = {}
-item_id_winrate = {}
-headers = {
-    'User-Agent': 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36'}
-page_link = 'https://www.dotabuff.com/items/winning'
+# print("Fetching item winrates...")
+# items_by_names = {}
+# item_id_winrate = {}
+# headers = {
+#     'User-Agent': 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36'}
+# page_link = 'https://www.dotabuff.com/items/winning'
 
-f = open('part_10_generate_train/items.json')
-data = json.load(f)
+# f = open('part_10_generate_train/items.json')
+# data = json.load(f)
 
-for item in data.keys():
-    if 'dname' in data[item]:
-        items_by_names[data[item]['dname']] = data[item]['id']
+# for item in data.keys():
+#     if 'dname' in data[item]:
+#         items_by_names[data[item]['dname']] = data[item]['id']
 
-page_response = requests.get(page_link, timeout=5, headers=headers)
-soup = BeautifulSoup(page_response.content, "html.parser")
-trs = soup.find_all('tr')
-for tr in trs[1:]:
-    item_name, winrate = tr.find_all('td')[1:3]
-    item_id_winrate[items_by_names.get(item_name.a.string)] = float(winrate['data-value'])
-print(item_id_winrate)
-time.sleep(2)
+# page_response = requests.get(page_link, timeout=5, headers=headers)
+# soup = BeautifulSoup(page_response.content, "html.parser")
+# trs = soup.find_all('tr')
+# for tr in trs[1:]:
+#     item_name, winrate = tr.find_all('td')[1:3]
+#     item_id_winrate[items_by_names.get(item_name.a.string)] = float(winrate['data-value'])
+# print(item_id_winrate)
+# time.sleep(2)
 # ----------------------------------------
 
-print("Loading embedding models...")
-heroes_model = Word2Vec.load("trained_models/embedding_heroes.model")
-items_model = Word2Vec.load("trained_models/embedding_items.model")
+# print("Loading embedding models...")
+# heroes_model = Word2Vec.load("trained_models/embedding_heroes.model")
+# items_model = Word2Vec.load("trained_models/embedding_items.model")
 
 
 print("Fetching matches...")
@@ -167,14 +169,14 @@ for i_timeline, timeline in enumerate(timelines):
                 # radiant_hero_embeddings.append(
                 #     np.mean(heroes_model.wv[str(player["hero_id"])])
                 # )
-                radiant_item_winrates.append(item_id_winrate.get(player["item0"], 50))
-                radiant_item_winrates.append(item_id_winrate.get(player["item1"], 50))
-                radiant_item_winrates.append(item_id_winrate.get(player["item2"], 50))
-                radiant_item_winrates.append(item_id_winrate.get(player["item3"], 50))
-                radiant_item_winrates.append(item_id_winrate.get(player["item4"], 50))
-                radiant_item_winrates.append(item_id_winrate.get(player["item5"], 50))
+                # radiant_item_winrates.append(item_id_winrate.get(player["item0"], 50))
+                # radiant_item_winrates.append(item_id_winrate.get(player["item1"], 50))
+                # radiant_item_winrates.append(item_id_winrate.get(player["item2"], 50))
+                # radiant_item_winrates.append(item_id_winrate.get(player["item3"], 50))
+                # radiant_item_winrates.append(item_id_winrate.get(player["item4"], 50))
+                # radiant_item_winrates.append(item_id_winrate.get(player["item5"], 50))
 
-                radiant_hero_winrates.append(heroid_winrate.get(player["hero_id"], 50))
+                # radiant_hero_winrates.append(heroid_winrate.get(player["hero_id"], 50))
 
                 radiant_net_worth += player["net_worth"]
                 radiant_assissts += player["assists"]
@@ -210,14 +212,14 @@ for i_timeline, timeline in enumerate(timelines):
                 # dire_hero_embeddings.append(
                 #     np.mean(heroes_model.wv[str(player["hero_id"])])
                 # )
-                dire_item_winrates.append(item_id_winrate.get(player["item0"], 50))
-                dire_item_winrates.append(item_id_winrate.get(player["item1"], 50))
-                dire_item_winrates.append(item_id_winrate.get(player["item2"], 50))
-                dire_item_winrates.append(item_id_winrate.get(player["item3"], 50))
-                dire_item_winrates.append(item_id_winrate.get(player["item4"], 50))
-                dire_item_winrates.append(item_id_winrate.get(player["item5"], 50))
+                # dire_item_winrates.append(item_id_winrate.get(player["item0"], 50))
+                # dire_item_winrates.append(item_id_winrate.get(player["item1"], 50))
+                # dire_item_winrates.append(item_id_winrate.get(player["item2"], 50))
+                # dire_item_winrates.append(item_id_winrate.get(player["item3"], 50))
+                # dire_item_winrates.append(item_id_winrate.get(player["item4"], 50))
+                # dire_item_winrates.append(item_id_winrate.get(player["item5"], 50))
 
-                dire_hero_winrates.append(heroid_winrate.get(player["hero_id"], 50))
+                # dire_hero_winrates.append(heroid_winrate.get(player["hero_id"], 50))
 
                 dire_net_worth += player["net_worth"]
                 dire_assissts += player["assists"]
@@ -252,8 +254,8 @@ for i_timeline, timeline in enumerate(timelines):
             # tmp['radiant_hero_winrates'] = np.mean(radiant_hero_winrates)
             # tmp['dire_hero_winrates'] = np.mean(dire_hero_winrates)
 
-            tmp['hero_winrate_diff'] = np.mean(radiant_hero_winrates) - np.mean(dire_hero_winrates)
-            tmp['item_winrate_diff'] = np.mean(radiant_item_winrates) - np.mean(dire_item_winrates)
+            # tmp['hero_winrate_diff'] = np.mean(radiant_hero_winrates) - np.mean(dire_hero_winrates)
+            # tmp['item_winrate_diff'] = np.mean(radiant_item_winrates) - np.mean(dire_item_winrates)
 
             tmp["net_worth"] = radiant_net_worth - dire_net_worth
             tmp["assissts"] = radiant_assissts - dire_assissts
@@ -284,3 +286,13 @@ for i_timeline, timeline in enumerate(timelines):
         f"dataframes/{filenames[i_timeline]}_{df.shape[0]}x{df.shape[1]}.csv",
         index=False,
     )
+
+# End the timer and calculate the execution time
+end_time = time.time()
+execution_time = end_time - start_time
+
+# Convert execution time to minutes and seconds
+minutes, seconds = divmod(execution_time, 60)
+
+# Print the execution time in minutes and seconds
+print(f"Execution time: {int(minutes)} minutes and {seconds} seconds")

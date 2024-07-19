@@ -52,7 +52,7 @@ with open('trained_models/30min/cart_classifier.pkl', 'rb') as f:
     M30_AB_CLASSIFIER = pickle.load(f) 
 
 
-df = pd.read_csv('various_experiments/predict_in_timelines/results/7702817490/32x48_samples.csv')
+df = pd.read_csv('various_experiments/predict_in_timelines/results/7702650896/41x46_samples.csv')
 
 X = df.iloc[:, 0:-1].values
 

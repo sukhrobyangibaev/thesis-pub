@@ -1,3 +1,4 @@
+import time
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
@@ -6,8 +7,11 @@ from sklearn.ensemble import ExtraTreesClassifier, GradientBoostingClassifier, H
 from sklearn.metrics import accuracy_score
 import pickle
 
+# Start the timer
+start_time = time.time()
+
 foldernames = ['10min', '20min', '30min']
-filenames = ['10min_301477x48.csv', '20min_273616x48.csv', '30min_376094x48.csv']
+filenames = ['10min_301475x46.csv', '20min_273616x46.csv', '30min_376092x46.csv']
 
 df = pd.read_csv(f'dataframes/{filenames[0]}')
 print(df.columns)
@@ -176,3 +180,13 @@ for i_f, filename in enumerate(filenames):
 
     # with open(f'dataframes/results.txt', 'a') as f:
     #     f.write(f'{foldernames}\n')
+
+# End the timer and calculate the execution time
+end_time = time.time()
+execution_time = end_time - start_time
+
+# Convert execution time to minutes and seconds
+minutes, seconds = divmod(execution_time, 60)
+
+# Print the execution time in minutes and seconds
+print(f"Execution time: {int(minutes)} minutes and {seconds} seconds")
