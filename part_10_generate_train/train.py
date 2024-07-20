@@ -11,7 +11,7 @@ import pickle
 start_time = time.time()
 
 foldernames = ['10min', '20min', '30min']
-filenames = ['10min_301475x46.csv', '20min_273616x46.csv', '30min_376092x46.csv']
+filenames = ['10min_414939x46.csv', '20min_378924x46.csv', '30min_516693x46.csv']
 
 df = pd.read_csv(f'dataframes/{filenames[0]}')
 print(df.columns)
