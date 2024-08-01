@@ -88,7 +88,7 @@ try:
                                         kill_counter = 0
                                         for killed in player['killed'].values():
                                             kill_counter += killed
-                                        if kill_counter == 5:
+                                        if kill_counter >= 5:
                                             min, sec = divmod(teamfight['start'], 60)
                                             msg = '⭐ {}\n⏲️ {}:{}\n🗡️ {}'.format(match_id, min, sec, next(iter(player['ability_uses'])))
                                             logger.info(msg)
