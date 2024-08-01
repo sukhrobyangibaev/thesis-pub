@@ -76,6 +76,20 @@ try:
                     {"match_id": match_id},
                     {"$set": {"winner": winner}},
                 )
+                
+                # Check for rampage ------------------------------------------------
+                if 'replay_url' in res_json and len(res_json['players']) > 2:
+                    for player in res_json['players']:
+                        try:
+                            if player['multi_kills'] is not None and '5' in player['multi_kills']:
+                                logger.info("We got a rampage: {}".format(match_id))
+                                send_telegram_message(match_id)
+                        except Exception as exc:
+                            logger.exception(exc)
+                            time.sleep(5)
+                            continue
+                # End of rampage check --------------------------------------------
+                
             except Exception as e:
                 logger.exception(e)
                 time.sleep(5)
@@ -88,9 +102,9 @@ try:
             time.sleep(5)
             continue
 
-    for err_match_id in error_ids:
-        delete_result = LGC_COL.delete_many({"match_id": err_match_id})
-        logger.info('deleted matches with id {}, {}'.format(err_match_id, delete_result))
+    # for err_match_id in error_ids:
+    #     delete_result = LGC_COL.delete_many({"match_id": err_match_id})
+    #     logger.info('deleted matches with id {}, {}'.format(err_match_id, delete_result))
 
 except Exception as e:
     logger.exception(e)
