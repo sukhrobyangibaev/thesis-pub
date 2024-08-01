@@ -83,7 +83,17 @@ try:
                         try:
                             if player['multi_kills'] is not None and '5' in player['multi_kills']:
                                 logger.info("We got a rampage: {}".format(match_id))
-                                send_telegram_message(match_id)
+                                for teamfight in res_json['teamfights']:
+                                    for player in teamfight['players']:
+                                        kill_counter = 0
+                                        for killed in player['killed'].values():
+                                            kill_counter += killed
+                                        if kill_counter == 5:
+                                            min, sec = divmod(teamfight['start'], 60)
+                                            msg = '⭐ {}\n⏲️ {}:{}\n🗡️ {}'.format(match_id, min, sec, next(iter(player['ability_uses'])))
+                                            logger.info(msg)
+                                            send_telegram_message(msg)
+                
                         except Exception as exc:
                             logger.exception(exc)
                             time.sleep(5)
