@@ -97,6 +97,7 @@ try:
                 # End of rampage check --------------------------------------------
                 
             except Exception as e:
+                logger.exception(match_id)
                 logger.exception(e)
                 time.sleep(5)
                 continue
