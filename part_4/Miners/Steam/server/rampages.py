@@ -72,6 +72,7 @@ try:
                 continue
 
             try:
+                logger.info("match id: {}".format(match_id))
                 # Check for rampage ------------------------------------------------
                 if 'replay_url' in res_json and len(res_json['players']) > 2:
                     for player in res_json['players']:
