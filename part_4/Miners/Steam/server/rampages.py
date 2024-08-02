@@ -91,6 +91,7 @@ try:
                                             send_telegram_message(msg)
                 
                         except Exception as exc:
+                            logger.exception(match_id)
                             logger.exception(exc)
                             time.sleep(5)
                             continue
