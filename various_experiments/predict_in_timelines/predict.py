@@ -236,8 +236,8 @@ for row in X:
 
 durations = np.array(durations) / 60
 
-average_predictions = np.mean([et_predictions, rf_predictions, hgb_predictions], axis=0)
-# average_predictions = np.mean([et_predictions, rf_predictions, hgb_predictions, gb_predictions], axis=0)
+# average_predictions = np.mean([et_predictions, rf_predictions, hgb_predictions], axis=0)
+average_predictions = np.mean([et_predictions, rf_predictions, hgb_predictions, gb_predictions], axis=0)
 spl = UnivariateSpline(durations, average_predictions)
 smooth_durations = np.linspace(np.min(durations), np.max(durations), 500)
 smooth_predictions = spl(smooth_durations)
