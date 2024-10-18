@@ -349,23 +349,23 @@ duration,radiant_series_wins,dire_series_wins,score,0_rts,1_rts,2_rts,3_rts,4_rt
 
 #### Extra Tree Classifier
 
-![etc](various_experiments/predict_in_timelines/results/7702650896/et.png)
+![etc](various_experiments/predict_in_timelines/results/7702650896/new_model_results/etc.png)
 
 #### Random Forest
 
-![rf](various_experiments/predict_in_timelines/results/7702650896/rf.png)
+![rf](various_experiments/predict_in_timelines/results/7702650896/new_model_results/rf.png)
 
 #### Hist Gradient Boosting
 
-![hgb](various_experiments/predict_in_timelines/results/7702650896/hgb.png)
+![hgb](various_experiments/predict_in_timelines/results/7702650896/new_model_results/hgb.png)
 
 #### Mean of [Extra Tree Classifier, Random Forest, Hist Gradient Boosting]
 
-![avg](various_experiments/predict_in_timelines/results/7702650896/avg.png)
+![avg](various_experiments/predict_in_timelines/results/7702650896/new_model_results/avg.png)
 
 #### All in one + Mean
 
-![et_rf_hgb_avg](various_experiments/predict_in_timelines/results/7702650896/all.png)
+![et_rf_hgb_avg](various_experiments/predict_in_timelines/results/7702650896/new_model_results/all.png)
 
 
 ## XG (radiant, winner) vs Tundra (dire)
@@ -376,20 +376,20 @@ duration,radiant_series_wins,dire_series_wins,score,0_rts,1_rts,2_rts,3_rts,4_rt
 
 #### Extra Tree Classifier
 
-![etc](various_experiments/predict_in_timelines/results/7702817490/et.png)
+![etc](various_experiments/predict_in_timelines/results/7702817490/last_model_results/etc.png)
 
 #### Random Forest
 
-![rf](various_experiments/predict_in_timelines/results/7702817490/rf.png)
+![rf](various_experiments/predict_in_timelines/results/7702817490/last_model_results/rf.png)
 
 #### Hist Gradient Boosting
 
-![hgb](various_experiments/predict_in_timelines/results/7702817490/hgb.png)
+![hgb](various_experiments/predict_in_timelines/results/7702817490/last_model_results/hgb.png)
 
 #### Mean of [Extra Tree Classifier, Random Forest, Hist Gradient Boosting]
 
-![avg](various_experiments/predict_in_timelines/results/7702817490/avg.png)
+![avg](various_experiments/predict_in_timelines/results/7702817490/last_model_results/avg.png)
 
 #### All in one + Mean
 
-![et_rf_hgb_avg](various_experiments/predict_in_timelines/results/7702817490/all.png)
+![et_rf_hgb_avg](various_experiments/predict_in_timelines/results/7702817490/last_model_results/all.png)
