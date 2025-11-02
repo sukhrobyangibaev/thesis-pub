@@ -41,6 +41,10 @@
 - [Open Dota API](part_3/Open%20Dota%20API/open_dota_api.md)
 - [Steam API](part_3/Steam%20API/steam_api.md)
 
+## Data pipeline and preprocessing (reproducibility)
+
+- End-to-end workflow, missing-values policy, API synchronization, and label definition are documented here: [docs/data_pipeline.md](docs/data_pipeline.md)
+
 ## Implementing Data Miners for Real-Time Data Acquisition
 
 ### Miners For Public Matches
