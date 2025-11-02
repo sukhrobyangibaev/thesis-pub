@@ -1,0 +1,19 @@
+dataset,best_classifier,other_classifier,t_statistic,p_value,n_pairs
+10min,Hist Gradient Boosting,CART,145.2124136200484,1.1859860089812697e-23,15
+10min,Hist Gradient Boosting,C4.5,136.21176969908123,2.903146384893474e-23,15
+10min,Hist Gradient Boosting,Extra Trees Classifier,17.02597863681243,9.419083340200533e-11,15
+10min,Hist Gradient Boosting,Gradient Boosting,16.855555496752547,1.0777216814944432e-10,15
+10min,Hist Gradient Boosting,Random Forest,22.863545374855192,1.7405277503969108e-12,15
+10min,Hist Gradient Boosting,Adaboost,20.772308225074763,6.430176836110729e-12,15
+20min,Extra Trees Classifier,CART,224.80823166136054,2.617358766127164e-26,15
+20min,Extra Trees Classifier,C4.5,285.6638516524975,9.152940684764785e-28,15
+20min,Extra Trees Classifier,Gradient Boosting,88.76375671840505,1.157882303117332e-20,15
+20min,Extra Trees Classifier,Hist Gradient Boosting,94.68660978826286,4.693930348273309e-21,15
+20min,Extra Trees Classifier,Random Forest,57.708540305433964,4.728311133819334e-18,15
+20min,Extra Trees Classifier,Adaboost,114.96400547957583,3.1127181545265373e-22,15
+30min,Extra Trees Classifier,CART,355.99612823644435,4.202182604373149e-29,15
+30min,Extra Trees Classifier,C4.5,285.44610911876083,9.25115892488576e-28,15
+30min,Extra Trees Classifier,Gradient Boosting,305.46786302867304,3.581612811094912e-28,15
+30min,Extra Trees Classifier,Hist Gradient Boosting,394.30317721078114,1.004946845892414e-29,15
+30min,Extra Trees Classifier,Random Forest,174.44562001352892,9.109021695692162e-25,15
+30min,Extra Trees Classifier,Adaboost,388.2354865125542,1.2486067193635363e-29,15
