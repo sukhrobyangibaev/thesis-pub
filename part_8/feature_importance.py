@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 from sklearn.inspection import permutation_importance
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
 
 
 PHASES: List[str] = ["10min", "20min", "30min"]
@@ -109,8 +110,25 @@ def compute_and_plot_for_phase(phase: str) -> None:
         print(f"[warn] Model has no feature_importances_: {type(model)}")
 
     # 2) Permutation importance on held-out test set
+    # Some pre-trained models were fit on label-encoded y (e.g., 0/1),
+    # while current CSVs often contain string labels (e.g., 'dire'/'radiant').
+    # Align types to avoid sklearn metric errors.
+    y_test_for_perm = y_test
+    try:
+        if hasattr(model, "classes_"):
+            classes_dtype = np.asarray(model.classes_).dtype
+            y_dtype = np.asarray(y_test).dtype
+            # If model expects numeric classes but y_test is strings/objects, encode y_test
+            if np.issubdtype(classes_dtype, np.number) and not np.issubdtype(y_dtype, np.number):
+                le = LabelEncoder()
+                le.fit(y_train)
+                y_test_for_perm = le.transform(y_test)
+                print("[align] Encoded y_test to numeric to match model classes for permutation importance.")
+    except Exception as e:
+        print(f"[warn] Could not auto-align label types for permutation importance: {e}. Proceeding with original labels.")
+
     print(f"[info] Computing permutation importance (this may take ~seconds)...")
-    perm = permutation_importance(model, X_test, y_test, n_repeats=10, random_state=1, n_jobs=-1)
+    perm = permutation_importance(model, X_test, y_test_for_perm, n_repeats=10, random_state=1, n_jobs=-1)
     perm_mean = perm.importances_mean
     perm_top, perm_names_top = topk(perm_mean, feature_names, k=20)
     out_file_perm = OUT_DIR / f"rf_permutation_importance_{phase}.png"

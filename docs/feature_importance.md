@@ -27,3 +27,23 @@ Each figure shows the top 20 features for the given match phase.
 - Permutation importance is computed on a held-out test split (same seed/split as used in training scripts) to quantify each feature's contribution.
 - Impurity-based (Gini) importance is provided for comparison and to align with conventional tree-based interpretations.
 - If you prefer SHAP, install `shap` and use `shap.TreeExplainer` with the same model; permutation importance is dependency-free and should satisfy the reviewer.
+
+## Plots
+
+Below are the generated feature importance plots saved to `part_8/plots/feature_importance/`.
+
+### Impurity-based (Gini) importance
+
+![Gini importance — 10 min](../part_8/plots/feature_importance/rf_gini_importance_10min.png)
+
+![Gini importance — 20 min](../part_8/plots/feature_importance/rf_gini_importance_20min.png)
+
+![Gini importance — 30 min](../part_8/plots/feature_importance/rf_gini_importance_30min.png)
+
+### Permutation importance
+
+![Permutation importance — 10 min](../part_8/plots/feature_importance/rf_permutation_importance_10min.png)
+
+![Permutation importance — 20 min](../part_8/plots/feature_importance/rf_permutation_importance_20min.png)
+
+![Permutation importance — 30 min](../part_8/plots/feature_importance/rf_permutation_importance_30min.png)
