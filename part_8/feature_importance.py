@@ -19,7 +19,7 @@ DATA_CANDIDATE_DIRS: List[Path] = [
     Path("datasets"),                   # large canonical datasets in repo root
 ]
 
-MODELS_DIR = Path("part_8/trained_models")  # optional: if present, we'll reuse models
+MODELS_DIR = Path("trained_models")  # optional: if present, we'll reuse models
 OUT_DIR = Path("part_8/plots/feature_importance")
 
 
