@@ -45,6 +45,10 @@
 
 - End-to-end workflow, missing-values policy, API synchronization, and label definition are documented here: [docs/data_pipeline.md](docs/data_pipeline.md)
 
+## Interpretability: feature importance by match phase
+
+- Visualisations of feature contributions (permutation and impurity-based importances) for 10/20/30-minute phases are available; see: [docs/feature_importance.md](docs/feature_importance.md)
+
 ## Implementing Data Miners for Real-Time Data Acquisition
 
 ### Miners For Public Matches
